@@ -1,0 +1,2962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_tFs_8GAHEe2WXM2LDn-oyg" name="TPBibliotheque">
+    <eAnnotations xmi:id="_tNcmsGAHEe2WXM2LDn-oyg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_tNcmsWAHEe2WXM2LDn-oyg" source="codegen">
+        <details xmi:id="_tNcmsmAHEe2WXM2LDn-oyg" key="codegenDirectory" value="/TPBibliotheque/src"/>
+        <details xmi:id="_ueqW8GAHEe2WXM2LDn-oyg" key="AssociatedSourceCode" value="/TPBibliotheque/src/Controller/Controller.java;3637998696/1;/TPBibliotheque/src/Model/Book.java;1986459048/1;/TPBibliotheque/src/Model/Borrow.java;3510009914/1;/TPBibliotheque/src/Model/ModelFacade.java;2938055443/1;/TPBibliotheque/src/Model/User.java;2677008406/1;/TPBibliotheque/src/application/BorrowFrame.java;2522592247/1;/TPBibliotheque/src/application/ConsultBorrowFrame.java;836913843/1;/TPBibliotheque/src/application/InitialFrame.java;1035715523/1;/TPBibliotheque/src/application/MenuFrame.java;924367977/1;/TPBibliotheque/src/application/ParameterFrame.java;4207073326/1;/TPBibliotheque/src/application/ReturnFrame.java;910059077/1;/TPBibliotheque/src/application/SituationFrame.java;2407360528/1;/TPBibliotheque/src/application/UserFrame.java;1225404211/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_tjg9UGAHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_tjg9UWAHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_tjg9UmAHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_tjhkYGAHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_tjhkYWAHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_tjhkYmAHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_tjhkY2AHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_tjhkZGAHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_tjhkZWAHEe2WXM2LDn-oyg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tjiygGAHEe2WXM2LDn-oyg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_tjiygWAHEe2WXM2LDn-oyg" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_trM5sGAHEe2WXM2LDn-oyg" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_trdYYWAHEe2WXM2LDn-oyg" name="ArrayList"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tj-QUGAHEe2WXM2LDn-oyg" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_trxhcGAHEe2WXM2LDn-oyg" name="Connection"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tj-QUWAHEe2WXM2LDn-oyg" name="time">
+        <packagedElement xmi:type="uml:Package" xmi:id="_tj-3YGAHEe2WXM2LDn-oyg" name="format">
+          <packagedElement xmi:type="uml:Class" xmi:id="_trIBMWAHEe2WXM2LDn-oyg" name="DateTimeFormatter"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_trHaIGAHEe2WXM2LDn-oyg" name="LocalDate"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_trvFMGAHEe2WXM2LDn-oyg" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_trvFMWAHEe2WXM2LDn-oyg" name="Object"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tjjZkGAHEe2WXM2LDn-oyg" name="Model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_tl7_MGAHEe2WXM2LDn-oyg" name="Book">
+        <ownedAttribute xmi:id="_tsAyAGAHEe2WXM2LDn-oyg" name="title" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tsCnMWAHEe2WXM2LDn-oyg" name="publicationYear" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts5i0GAHEe2WXM2LDn-oyg" name="author">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts6J4WAHEe2WXM2LDn-oyg" name="isbn">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts6w8WAHEe2WXM2LDn-oyg" name="keyword">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts7YAWAHEe2WXM2LDn-oyg" name="publisher">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts7_EWAHEe2WXM2LDn-oyg" name="copies" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts9NMGAHEe2WXM2LDn-oyg" name="available" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts90QGAHEe2WXM2LDn-oyg" name="id" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsesEGAHEe2WXM2LDn-oyg" name="Book" specification="_tl-bcGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsesEWAHEe2WXM2LDn-oyg" name="copies">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesEmAHEe2WXM2LDn-oyg" name="available">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesE2AHEe2WXM2LDn-oyg" name="title">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesFGAHEe2WXM2LDn-oyg" name="keyword">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesFWAHEe2WXM2LDn-oyg" name="publisher">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesFmAHEe2WXM2LDn-oyg" name="publicationYear">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesF2AHEe2WXM2LDn-oyg" name="isbn">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesGGAHEe2WXM2LDn-oyg" name="author">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesGWAHEe2WXM2LDn-oyg" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsesGmAHEe2WXM2LDn-oyg" type="_tl7_MGAHEe2WXM2LDn-oyg" direction="return"/>
+          <language>java</language>
+          <body>this.copies = copies;&#xD;
+		this.available = available;&#xD;
+		this.title = title;&#xD;
+		this.keyword = keyword;&#xD;
+		this.publisher = publisher;&#xD;
+		this.publicationYear = publicationYear;&#xD;
+		this.isbn = isbn;&#xD;
+		this.author = author;&#xD;
+		this.id = id;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsfTIGAHEe2WXM2LDn-oyg" name="getCopies" specification="_tmAQoGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsfTIWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.copies; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsfTImAHEe2WXM2LDn-oyg" name="getAvailable" specification="_tmA3sGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsfTI2AHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.available; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsfTJGAHEe2WXM2LDn-oyg" name="getKeyword" specification="_tmBewGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsfTJWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.keyword; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tshIUGAHEe2WXM2LDn-oyg" name="getPublisher" specification="_tmCF0GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tshIUWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.publisher; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tshvYGAHEe2WXM2LDn-oyg" name="getPublicationYear" specification="_tmCs4GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tshvYWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.publicationYear; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tshvYmAHEe2WXM2LDn-oyg" name="getIsbn" specification="_tmDT8GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tshvY2AHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.isbn; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tshvZGAHEe2WXM2LDn-oyg" name="getAuthor" specification="_tmD7AGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tshvZWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.author; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsiWcGAHEe2WXM2LDn-oyg" name="getId" specification="_tmEiEGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsiWcWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.id; </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tl-bcGAHEe2WXM2LDn-oyg" name="Book" visibility="package" method="_tsesEGAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tl_pkWAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tl_pkmAHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tl-bcWAHEe2WXM2LDn-oyg" name="copies">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_CgGAHEe2WXM2LDn-oyg" name="available">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_CgWAHEe2WXM2LDn-oyg" name="title">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_CgmAHEe2WXM2LDn-oyg" name="keyword">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_Cg2AHEe2WXM2LDn-oyg" name="publisher">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_ChGAHEe2WXM2LDn-oyg" name="publicationYear">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_ChWAHEe2WXM2LDn-oyg" name="isbn">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_ChmAHEe2WXM2LDn-oyg" name="author">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_pkGAHEe2WXM2LDn-oyg" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tl_pk2AHEe2WXM2LDn-oyg" type="_tl7_MGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmAQoGAHEe2WXM2LDn-oyg" name="getCopies" method="_tsfTIGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmAQoWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmA3sGAHEe2WXM2LDn-oyg" name="getAvailable" method="_tsfTImAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmA3sWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmBewGAHEe2WXM2LDn-oyg" name="getKeyword" method="_tsfTJGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmBewWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmCF0GAHEe2WXM2LDn-oyg" name="getPublisher" method="_tshIUGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmCF0WAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmCs4GAHEe2WXM2LDn-oyg" name="getPublicationYear" method="_tshvYGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmCs4WAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmDT8GAHEe2WXM2LDn-oyg" name="getIsbn" method="_tshvYmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmDT8WAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmD7AGAHEe2WXM2LDn-oyg" name="getAuthor" method="_tshvZGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmD7AWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmEiEGAHEe2WXM2LDn-oyg" name="getId" method="_tsiWcGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmEiEWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tmHlYGAHEe2WXM2LDn-oyg" name="Borrow">
+        <ownedAttribute xmi:id="_tsFDcGAHEe2WXM2LDn-oyg" name="firstName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tsGRkGAHEe2WXM2LDn-oyg" name="duration">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts_CYGAHEe2WXM2LDn-oyg" name="lastName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts_pcGAHEe2WXM2LDn-oyg" name="category">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ts_pc2AHEe2WXM2LDn-oyg" name="title">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttA3kGAHEe2WXM2LDn-oyg" name="borrowDate">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttBeoGAHEe2WXM2LDn-oyg" name="author">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttBeo2AHEe2WXM2LDn-oyg" name="maxDuration">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttCFsmAHEe2WXM2LDn-oyg" name="publicationYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttFJAGAHEe2WXM2LDn-oyg" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttFJA2AHEe2WXM2LDn-oyg" name="bookId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsjkkGAHEe2WXM2LDn-oyg" name="Borrow" specification="_tmKBoGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsjkkWAHEe2WXM2LDn-oyg" name="firstName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjkkmAHEe2WXM2LDn-oyg" name="lastName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjkk2AHEe2WXM2LDn-oyg" name="category">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjklGAHEe2WXM2LDn-oyg" name="title">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjklWAHEe2WXM2LDn-oyg" name="borrowDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjklmAHEe2WXM2LDn-oyg" name="duration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjkl2AHEe2WXM2LDn-oyg" name="maxDuration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjkmGAHEe2WXM2LDn-oyg" name="publicationYear">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjkmWAHEe2WXM2LDn-oyg" name="author">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjkmmAHEe2WXM2LDn-oyg" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjkm2AHEe2WXM2LDn-oyg" name="bookId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsjknGAHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" direction="return"/>
+          <language>java</language>
+          <body>this.firstName = firstName;&#xD;
+		this.lastName = lastName;&#xD;
+		this.category = category;&#xD;
+		this.title = title;&#xD;
+		this.borrowDate = borrowDate;&#xD;
+		this.duration = duration;&#xD;
+		this.maxDuration = maxDuration;&#xD;
+		this.publicationYear = publicationYear;&#xD;
+		this.author = author;&#xD;
+		this.id = id;&#xD;
+		this.bookId = bookId;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tskLoGAHEe2WXM2LDn-oyg" name="getFirstName" specification="_tmNE8GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tskLoWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return firstName; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tskLomAHEe2WXM2LDn-oyg" name="getLastName" specification="_tmNsAGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tskLo2AHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return lastName; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tskysGAHEe2WXM2LDn-oyg" name="getCategory" specification="_tmOTEGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tskysWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return category; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tskysmAHEe2WXM2LDn-oyg" name="getTitle" specification="_tmO6IGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tskys2AHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return title; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tskytGAHEe2WXM2LDn-oyg" name="getBorrowDate" specification="_tmPhMGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tskytWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return borrowDate; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tslZwGAHEe2WXM2LDn-oyg" name="getDuration" specification="_tmQIQGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tslZwWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return duration; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tslZwmAHEe2WXM2LDn-oyg" name="getMaxDuration" specification="_tmQvUGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tslZw2AHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return maxDuration; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tslZxGAHEe2WXM2LDn-oyg" name="getPublicationYear" specification="_tmRWYGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tslZxWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return publicationYear; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsmA0GAHEe2WXM2LDn-oyg" name="getAuthor" specification="_tmR9cGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsmA0WAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return author; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsmA0mAHEe2WXM2LDn-oyg" name="getId" specification="_tmR9cmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsmA02AHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.id; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsmA1GAHEe2WXM2LDn-oyg" name="getBookId" specification="_tmSkgWAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsmA1WAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.bookId; </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tmKBoGAHEe2WXM2LDn-oyg" name="Borrow" visibility="package" method="_tsjkkGAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tmLPwGAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tmLPwWAHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tmKBoWAHEe2WXM2LDn-oyg" name="firstName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKBomAHEe2WXM2LDn-oyg" name="lastName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKBo2AHEe2WXM2LDn-oyg" name="category">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKBpGAHEe2WXM2LDn-oyg" name="title">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKBpWAHEe2WXM2LDn-oyg" name="borrowDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKosGAHEe2WXM2LDn-oyg" name="duration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKosWAHEe2WXM2LDn-oyg" name="maxDuration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKosmAHEe2WXM2LDn-oyg" name="publicationYear">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKos2AHEe2WXM2LDn-oyg" name="author">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKotGAHEe2WXM2LDn-oyg" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmKotWAHEe2WXM2LDn-oyg" name="bookId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmLPwmAHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmNE8GAHEe2WXM2LDn-oyg" name="getFirstName" method="_tskLoGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmNE8WAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmNsAGAHEe2WXM2LDn-oyg" name="getLastName" method="_tskLomAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmNsAWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmOTEGAHEe2WXM2LDn-oyg" name="getCategory" method="_tskysGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmOTEWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmO6IGAHEe2WXM2LDn-oyg" name="getTitle" method="_tskysmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmO6IWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmPhMGAHEe2WXM2LDn-oyg" name="getBorrowDate" method="_tskytGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmPhMWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmQIQGAHEe2WXM2LDn-oyg" name="getDuration" method="_tslZwGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmQIQWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmQvUGAHEe2WXM2LDn-oyg" name="getMaxDuration" method="_tslZwmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmQvUWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmRWYGAHEe2WXM2LDn-oyg" name="getPublicationYear" method="_tslZxGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmRWYWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmR9cGAHEe2WXM2LDn-oyg" name="getAuthor" method="_tsmA0GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmR9cWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmR9cmAHEe2WXM2LDn-oyg" name="getId" method="_tsmA0mAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmSkgGAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmSkgWAHEe2WXM2LDn-oyg" name="getBookId" method="_tsmA1GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmTLkGAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tmYEEGAHEe2WXM2LDn-oyg" name="ModelFacade">
+        <ownedAttribute xmi:id="_tsIt0GAHEe2WXM2LDn-oyg" name="mf" isStatic="true" type="_tmYEEGAHEe2WXM2LDn-oyg" association="_ttdjgGAHEe2WXM2LDn-oyg">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_tsIt0mAHEe2WXM2LDn-oyg" value="null"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tsJU4GAHEe2WXM2LDn-oyg" name="con" visibility="private" type="_trxhcGAHEe2WXM2LDn-oyg" association="_tteKkWAHEe2WXM2LDn-oyg"/>
+        <ownedAttribute xmi:id="_tsJ78GAHEe2WXM2LDn-oyg" name="user" type="_tm62oGAHEe2WXM2LDn-oyg" isReadOnly="true" association="_ttexoWAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsn2AGAHEe2WXM2LDn-oyg" name="getAPI" specification="_tmZ5QGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsn2AWAHEe2WXM2LDn-oyg" type="_tmYEEGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (mf == null) &#xD;
+			mf = new ModelFacade();&#xD;
+		return mf;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsn2AmAHEe2WXM2LDn-oyg" name="establishConnection" specification="_tmZ5QWAHEe2WXM2LDn-oyg">
+          <language>java</language>
+          <body>try {&#xD;
+ 		Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);&#xD;
+ 		con = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/Library_ST5&quot;, &quot;root&quot;, &quot;titi1968!@_&quot;);&#xD;
+ 		System.out.println(&quot;Connection established!&quot;);&#xD;
+ 	}&#xD;
+ 	catch (Exception e) {&#xD;
+ 		System.out.println(e);&#xD;
+ 	}&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsn2A2AHEe2WXM2LDn-oyg" name="closeConnection" specification="_tmagUGAHEe2WXM2LDn-oyg">
+          <language>java</language>
+          <body>try {&#xD;
+ 		con.close();&#xD;
+ 		System.out.println(&quot;Connection closed!&quot;);&#xD;
+ 	}&#xD;
+ 	catch (SQLException e) {&#xD;
+ 		System.out.println(e);&#xD;
+ 	}&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsodEGAHEe2WXM2LDn-oyg" name="checkCredentials" specification="_tmagUWAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsodEWAHEe2WXM2LDn-oyg" name="u">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsodEmAHEe2WXM2LDn-oyg" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsodE2AHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try {&#xD;
+			String sql = &quot;SELECT * FROM Users WHERE Email = ? AND ID = ?&quot;;&#xD;
+			PreparedStatement stmt = con.prepareStatement(sql);&#xD;
+			stmt.setString(1, u);&#xD;
+			stmt.setString(2, password);&#xD;
+			ResultSet rs = stmt.executeQuery();&#xD;
+			&#xD;
+			if (rs.next()) {  // an user with such credentials was found&#xD;
+				if (rs.getString(4).equals(&quot;Manager&quot;)) {&#xD;
+					Controller.getController().setManager(true);&#xD;
+				}&#xD;
+				else {&#xD;
+					Controller.getController().setManager(false);&#xD;
+				}&#xD;
+				user = new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getInt(5), rs.getBoolean(6));&#xD;
+				return true;&#xD;
+			}&#xD;
+			&#xD;
+			else { return false; }&#xD;
+			&#xD;
+		} &#xD;
+ 	catch (SQLException e) {&#xD;
+			System.out.println(e);&#xD;
+			return false;&#xD;
+		}&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tspEIGAHEe2WXM2LDn-oyg" name="getCategories" specification="_tmbHYmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tspEIWAHEe2WXM2LDn-oyg" type="_trdYYWAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>ArrayList&lt;String> categories = new ArrayList&lt;String>();&#xD;
+ 	String sql = &quot;SELECT CatDescription FROM Categories&quot;;&#xD;
+ 	&#xD;
+ 	try {&#xD;
+			ResultSet rs = con.createStatement().executeQuery(sql);&#xD;
+			while (rs.next()) {&#xD;
+			    categories.add(rs.getString(1));&#xD;
+			}&#xD;
+		} &#xD;
+ 	catch (SQLException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+ 	&#xD;
+ 	return categories;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tspEImAHEe2WXM2LDn-oyg" name="setCategory" specification="_tmv3gGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tspEI2AHEe2WXM2LDn-oyg" name="cat">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tspEJGAHEe2WXM2LDn-oyg" name="maxLoan">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tspEJWAHEe2WXM2LDn-oyg" name="maxDuration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tspEJmAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String sql = &quot;UPDATE Categories SET MaxBorrow = ?, MaxBorrowDuration = ? WHERE CatDescription = ?&quot;;&#xD;
+ 	&#xD;
+		try {&#xD;
+			PreparedStatement stmt = con.prepareStatement(sql);&#xD;
+			stmt.setInt(1, maxLoan);&#xD;
+			stmt.setInt(2, maxDuration);&#xD;
+			stmt.setString(3, cat);&#xD;
+			stmt.executeUpdate();&#xD;
+			return true;&#xD;
+		} &#xD;
+		catch (SQLException e) {&#xD;
+			e.printStackTrace();&#xD;
+			return false;&#xD;
+		}&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsprMGAHEe2WXM2LDn-oyg" name="getNbLoans" specification="_tmwekWAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsprMWAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String sql = &quot;SELECT COUNT(*) FROM BorrowHistory WHERE UserID = ? AND DeliveryDate IS NULL&quot;;&#xD;
+ 	&#xD;
+		try {&#xD;
+			PreparedStatement stmt = con.prepareStatement(sql);&#xD;
+			stmt.setInt(1, user.getId());&#xD;
+			ResultSet rs = stmt.executeQuery();&#xD;
+			rs.next();&#xD;
+			return rs.getInt(1);&#xD;
+		} &#xD;
+		catch (SQLException e) {&#xD;
+			e.printStackTrace();&#xD;
+			return 0;&#xD;
+		}&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsprMmAHEe2WXM2LDn-oyg" name="getCategoryData" specification="_tmxFoGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsprM2AHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsprNGAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String sql = &quot;SELECT MaxBorrow, MaxBorrowDuration FROM Categories WHERE CatDescription = ?&quot;;&#xD;
+ 	int[] categoryData = new int[2];&#xD;
+ 	&#xD;
+		try {&#xD;
+			PreparedStatement stmt = con.prepareStatement(sql);&#xD;
+			stmt.setString(1, user.getCategory());&#xD;
+			ResultSet rs = stmt.executeQuery();&#xD;
+			rs.next();&#xD;
+			categoryData[0] = rs.getInt(1);&#xD;
+			categoryData[1] = rs.getInt(2);&#xD;
+			return categoryData;&#xD;
+		} &#xD;
+		catch (SQLException e) {&#xD;
+			e.printStackTrace();&#xD;
+			return null;&#xD;
+		}&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsqSQGAHEe2WXM2LDn-oyg" name="consultBorrows" specification="_tmxssGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsqSQWAHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsqSQmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>List&lt;Borrow> consultBorrowList = new ArrayList&lt;Borrow>();&#xD;
+ 	&#xD;
+ 	String sql = &quot;SELECT u.FirstName, u.LastName, u.CategoryDescription, w.Title, h.BorrowingDate, TIMESTAMPDIFF(month, h.BorrowingDate, CURRENT_TIMESTAMP), c.MaxBorrowDuration, e.PublicationYear&quot;&#xD;
+ 			+ &quot; FROM BorrowHistory h, Books b, Works w, Users u, Categories c, Editions e&quot;&#xD;
+ 			+ &quot; WHERE h.DeliveryDate IS NULL AND h.BookID = b.ID AND e.WorkID = w.ID&quot;&#xD;
+ 			+ &quot; AND h.UserID = u.ID AND u.CategoryDescription = c.CatDescription AND b.EditionISBN = e.ISBN&quot;&#xD;
+ 			+ &quot; ORDER BY h.BorrowingDate&quot;;&#xD;
+ 	&#xD;
+ 	try {&#xD;
+			ResultSet rs = con.createStatement().executeQuery(sql);&#xD;
+			while (rs.next()) {&#xD;
+				Borrow b = new Borrow(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getInt(6), rs.getInt(7), rs.getInt(8), &quot;&quot;, 0, 0);&#xD;
+				consultBorrowList.add(b);&#xD;
+			}&#xD;
+		} &#xD;
+ 	catch (SQLException e) { e.printStackTrace(); }&#xD;
+ 	&#xD;
+ 	return consultBorrowList;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsqSQ2AHEe2WXM2LDn-oyg" name="manageUsers" specification="_tmyTwGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsqSRGAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsqSRWAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>List&lt;User> manageUsers = new ArrayList&lt;User>();&#xD;
+ 	String sql = &quot;SELECT * FROM Users ORDER BY LastName&quot;;&#xD;
+ 	&#xD;
+ 	try {&#xD;
+			ResultSet rs = con.createStatement().executeQuery(sql);&#xD;
+			while (rs.next()) {&#xD;
+				User u = new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getInt(5), rs.getBoolean(6));&#xD;
+				manageUsers.add(u);&#xD;
+			}&#xD;
+		} &#xD;
+ 	catch (SQLException e) { e.printStackTrace(); }&#xD;
+ 	&#xD;
+ 	return manageUsers;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsqSRmAHEe2WXM2LDn-oyg" name="filterUsers" specification="_tmy60GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsqSR2AHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsqSSGAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>List&lt;Integer> users = new ArrayList&lt;Integer>();&#xD;
+ 	String sql = &quot;SELECT ID FROM Users WHERE ID IN&quot;&#xD;
+				+ &quot; (SELECT u.ID&quot;&#xD;
+				+ &quot; FROM Users u, BorrowHistory b, Categories c&quot;&#xD;
+				+ &quot; WHERE u.ID = b.UserID AND u.CategoryDescription = c.CatDescription&quot;&#xD;
+				+ &quot; AND TIMESTAMPDIFF(month, b.BorrowingDate, CURRENT_TIMESTAMP)) > c.MaxBorrowDuration)&quot;;  // filter users who are late&#xD;
+ 	&#xD;
+ 	try {&#xD;
+			ResultSet rs = con.createStatement().executeQuery(sql);&#xD;
+			while (rs.next()) &#xD;
+				users.add(rs.getInt(1));&#xD;
+		} &#xD;
+ 	catch (SQLException e) { e.printStackTrace(); }&#xD;
+ 	&#xD;
+ 	return users;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsrgYGAHEe2WXM2LDn-oyg" name="setRedList" specification="_trJ2YGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsrgYWAHEe2WXM2LDn-oyg" name="u" type="_tm62oGAHEe2WXM2LDn-oyg"/>
+          <ownedParameter xmi:id="_tsrgYmAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String comment;&#xD;
+ 	if (u.getRedList()) &#xD;
+ 		comment = &quot;removed&quot;;&#xD;
+ 	else &#xD;
+ 		comment = &quot;put&quot;;&#xD;
+ 	&#xD;
+ 	String sql = &quot;UPDATE Users SET RedList = NOT RedList WHERE ID = ?&quot;;&#xD;
+ 	String sql2 = &quot;INSERT INTO RedListLog(UserID, RedListStatus, LogDate) VALUES (?, ?, ?)&quot;;&#xD;
+		PreparedStatement stmt;&#xD;
+		&#xD;
+		try {&#xD;
+			stmt = con.prepareStatement(sql);&#xD;
+			stmt.setInt(1, u.getId());&#xD;
+			stmt.executeUpdate();&#xD;
+			&#xD;
+			stmt = con.prepareStatement(sql2);&#xD;
+			stmt.setInt(1, u.getId());&#xD;
+			stmt.setString(2, comment);&#xD;
+			stmt.setString(3, LocalDate.now().format(DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd&quot;)));&#xD;
+			stmt.executeUpdate();&#xD;
+		} &#xD;
+		catch (SQLException e) { e.printStackTrace(); }&#xD;
+		&#xD;
+		u.setRedList(); &#xD;
+		if (u.getId() == getUser().getId()) //in the case the selected row is the own manager who is entering the system&#xD;
+			getUser().setRedList();&#xD;
+		&#xD;
+		return u;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tssHcGAHEe2WXM2LDn-oyg" name="borrowBooks" specification="_tm0I8GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tssHcWAHEe2WXM2LDn-oyg" type="_trvFMWAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tssHcmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>List&lt;Object> result = new ArrayList&lt;Object>();&#xD;
+ 	List&lt;Book> borrowBooks = new ArrayList&lt;Book>();&#xD;
+ 	&#xD;
+ 	if (user.getRedList())   // user is on red list, cannot borrow&#xD;
+ 		result.add(1);&#xD;
+ 	&#xD;
+ 	else if (checkMaxBorrows())  // user achieved maximum number of borrows&#xD;
+ 		result.add(2);&#xD;
+ 	&#xD;
+ 	else {&#xD;
+ 		result.add(3);&#xD;
+     	String sql = &quot;SELECT b.Copies, b.Available, w.Title, w.Keyword, p.Name, e.PublicationYear, e.ISBN, group_concat(CONCAT(a.FirstName, ' ' , a.LastName) SEPARATOR ', '), b.ID&quot;&#xD;
+     			+ &quot; FROM books b, works w, Editions e, Authorships ah, Authors a, Publishers p&quot;&#xD;
+     			+ &quot; WHERE e.WorkID = w.ID AND b.EditionISBN = e.ISBN&quot;&#xD;
+     			+ &quot; AND e.WorkID = ah.WorkID AND ah.AuthorID = a.ID&quot;&#xD;
+     			+ &quot; AND e.PublisherID = p.ID AND Available > 0&quot;&#xD;
+     			+ &quot; GROUP BY b.id;&quot;;&#xD;
+     	&#xD;
+     	try {&#xD;
+ 			ResultSet rs = con.createStatement().executeQuery(sql);&#xD;
+ 			while (rs.next()) {&#xD;
+ 				Book b = new Book(rs.getInt(1), rs.getInt(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getInt(6), rs.getString(7), rs.getString(8), rs.getInt(9));&#xD;
+ 				borrowBooks.add(b);&#xD;
+ 			}&#xD;
+ 		} &#xD;
+     	catch (SQLException e) { e.printStackTrace(); }&#xD;
+ 	}&#xD;
+ 	&#xD;
+ 	result.add(borrowBooks);&#xD;
+ 	return result;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tssugGAHEe2WXM2LDn-oyg" name="borrowBook" specification="_trKdcGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tssugWAHEe2WXM2LDn-oyg" name="b" type="_tl7_MGAHEe2WXM2LDn-oyg"/>
+          <language>java</language>
+          <body>PreparedStatement stmt;&#xD;
+ 	String sql = &quot;UPDATE Books SET Available = Available - 1 WHERE ID = ?&quot;;&#xD;
+ 	String sql2 = &quot;INSERT INTO BorrowHistory(BookID, UserID,BorrowingDate)  VALUES (?, ?, ?)&quot;;&#xD;
+ 	&#xD;
+		try {&#xD;
+			stmt = con.prepareStatement(sql);&#xD;
+			stmt.setInt(1, b.getId());&#xD;
+			stmt.executeUpdate();&#xD;
+			&#xD;
+			stmt = con.prepareStatement(sql2);&#xD;
+			stmt.setInt(1, b.getId());&#xD;
+			stmt.setInt(2, user.getId());&#xD;
+			stmt.setString(3, LocalDate.now().format(DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd&quot;)));&#xD;
+			stmt.executeUpdate();&#xD;
+		} &#xD;
+		catch (SQLException e) { e.printStackTrace(); }&#xD;
+		&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tssugmAHEe2WXM2LDn-oyg" name="returnBooksList" specification="_tm1-IGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tssug2AHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tssuhGAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>List&lt;Borrow> returnBooks = new ArrayList&lt;Borrow>();&#xD;
+ 	&#xD;
+ 	String sql = &quot;SELECT w.Title, h.BorrowingDate, TIMESTAMPDIFF(month, h.BorrowingDate, CURRENT_TIMESTAMP), e.PublicationYear, group_concat(CONCAT(a.FirstName, ' ' , a.LastName) SEPARATOR ', '), h.ID, b.ID&quot;&#xD;
+ 			+  &quot; FROM BorrowHistory h, Books b, Works w, Users u, Editions e, Authorships ah, Authors a&quot;&#xD;
+ 			+ &quot; WHERE h.DeliveryDate IS NULL AND h.BookID = b.ID AND e.WorkID = w.ID&quot;&#xD;
+ 			+ &quot; AND h.UserID = u.ID AND b.EditionISBN = e.ISBN AND e.WorkID = ah.WorkID&quot;&#xD;
+ 			+ &quot; AND ah.AuthorID = a.ID AND h.UserID = ?&quot;&#xD;
+ 			+ &quot; GROUP BY h.id ORDER BY h.BorrowingDate&quot;;&#xD;
+ 	&#xD;
+ 	try {&#xD;
+ 		PreparedStatement stmt = con.prepareStatement(sql);&#xD;
+ 		stmt.setInt(1, user.getId());&#xD;
+ 		ResultSet rs = stmt.executeQuery();&#xD;
+ 		&#xD;
+			while (rs.next()) {&#xD;
+				Borrow r = new Borrow(&quot;&quot;, &quot;&quot;, &quot;&quot;, rs.getString(1), rs.getString(2), rs.getInt(3), 0, rs.getInt(4), rs.getString(5), rs.getInt(6), rs.getInt(7));&#xD;
+				returnBooks.add(r);&#xD;
+			}&#xD;
+		} &#xD;
+ 	catch (SQLException e) { e.printStackTrace(); }&#xD;
+ 	&#xD;
+ 	return returnBooks;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tssuhWAHEe2WXM2LDn-oyg" name="returnBook" specification="_trKdcmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tssuhmAHEe2WXM2LDn-oyg" name="b" type="_tmHlYGAHEe2WXM2LDn-oyg"/>
+          <language>java</language>
+          <body>PreparedStatement stmt;&#xD;
+ 	String sql = &quot;UPDATE BorrowHistory SET DeliveryDate = ? WHERE ID = ?&quot;;&#xD;
+ 	String sql2 = &quot;UPDATE Books SET Available = Available + 1 WHERE ID = ?&quot;;&#xD;
+ 	&#xD;
+		try {&#xD;
+			stmt = con.prepareStatement(sql);&#xD;
+			stmt.setString(1, LocalDate.now().format(DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd&quot;)));&#xD;
+			stmt.setInt(2, b.getId());&#xD;
+			stmt.executeUpdate();&#xD;
+			&#xD;
+			stmt = con.prepareStatement(sql2);&#xD;
+			stmt.setInt(1, b.getBookId());&#xD;
+			stmt.executeUpdate();&#xD;
+		} &#xD;
+		catch (SQLException e) { e.printStackTrace(); }&#xD;
+ 		&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_BIoP0GAVEe2WXM2LDn-oyg" name="checkMaxBorrows" specification="_BIklcGAVEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_BIoP0WAVEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String sql = &quot;SELECT b.UserID, COUNT(b.UserID), c.MaxBorrow&quot;&#xD;
+ 			+ &quot; FROM BorrowHistory b, Users u, Categories c&quot;&#xD;
+ 			+ &quot; WHERE b.DeliveryDate IS NULL AND b.UserID = u.ID&quot;&#xD;
+ 			+ &quot; AND u.CategoryDescription = c.CatDescription&quot;&#xD;
+ 			+ &quot; GROUP BY b.UserID&quot;&#xD;
+ 			+ &quot; HAVING COUNT(b.UserID) > c.MaxBorrow&quot;;&#xD;
+ 	&#xD;
+ 	try {&#xD;
+			ResultSet rs = con.createStatement().executeQuery(sql);&#xD;
+			while (rs.next()) &#xD;
+				if (rs.getInt(1) == user.getId())&#xD;
+					return true;&#xD;
+		} &#xD;
+ 	catch (SQLException e) { e.printStackTrace(); }&#xD;
+ 	&#xD;
+ 	return false;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tmZ5QGAHEe2WXM2LDn-oyg" name="getAPI" isStatic="true" method="_tsn2AGAHEe2WXM2LDn-oyg">
+          <ownedComment xmi:id="_Oe004GAVEe2WXM2LDn-oyg">
+            <body>Singleton pattern implementation&#xD;
+	 * @return unique instance of ModelFacade type</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_trJPUGAHEe2WXM2LDn-oyg" type="_tmYEEGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmZ5QWAHEe2WXM2LDn-oyg" name="establishConnection" method="_tsn2AmAHEe2WXM2LDn-oyg"/>
+        <ownedOperation xmi:id="_tmagUGAHEe2WXM2LDn-oyg" name="closeConnection" method="_tsn2A2AHEe2WXM2LDn-oyg"/>
+        <ownedOperation xmi:id="_tmagUWAHEe2WXM2LDn-oyg" name="checkCredentials" method="_tsodEGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmagUmAHEe2WXM2LDn-oyg" name="u">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmbHYGAHEe2WXM2LDn-oyg" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmbHYWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmbHYmAHEe2WXM2LDn-oyg" name="getCategories" method="_tspEIGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tryIgWAHEe2WXM2LDn-oyg" type="_trdYYWAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmv3gGAHEe2WXM2LDn-oyg" name="setCategory" method="_tspEImAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmv3gWAHEe2WXM2LDn-oyg" name="cat">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmv3gmAHEe2WXM2LDn-oyg" name="maxLoan">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmv3g2AHEe2WXM2LDn-oyg" name="maxDuration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tmwekGAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmwekWAHEe2WXM2LDn-oyg" name="getNbLoans" method="_tsprMGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmwekmAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmxFoGAHEe2WXM2LDn-oyg" name="getCategoryData" method="_tsprMmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmxFoWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tmxFomAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmxssGAHEe2WXM2LDn-oyg" name="consultBorrows" method="_tsqSQGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmxssWAHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tmxssmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmyTwGAHEe2WXM2LDn-oyg" name="manageUsers" method="_tsqSQ2AHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmyTwWAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tmyTwmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tmy60GAHEe2WXM2LDn-oyg" name="filterUsers" method="_tsqSRmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tmy60WAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tmzh4GAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tm0I8GAHEe2WXM2LDn-oyg" name="borrowBooks" method="_tssHcGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tm0wAGAHEe2WXM2LDn-oyg" type="_trvFMWAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tm0wAWAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tm1-IGAHEe2WXM2LDn-oyg" name="returnBooksList" method="_tssugmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tm1-IWAHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tm1-ImAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_trJ2YGAHEe2WXM2LDn-oyg" name="setRedList" method="_tsrgYGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_trJ2YWAHEe2WXM2LDn-oyg" name="u" type="_tm62oGAHEe2WXM2LDn-oyg"/>
+          <ownedParameter xmi:id="_trJ2YmAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_trKdcGAHEe2WXM2LDn-oyg" name="borrowBook" method="_tssugGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_trKdcWAHEe2WXM2LDn-oyg" name="b" type="_tl7_MGAHEe2WXM2LDn-oyg"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_trKdcmAHEe2WXM2LDn-oyg" name="returnBook" method="_tssuhWAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_trKdc2AHEe2WXM2LDn-oyg" name="b" type="_tmHlYGAHEe2WXM2LDn-oyg"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_BIklcGAVEe2WXM2LDn-oyg" name="checkMaxBorrows" visibility="private" method="_BIoP0GAVEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_BInBsGAVEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tm62oGAHEe2WXM2LDn-oyg" name="User">
+        <ownedAttribute xmi:id="_tsKjAGAHEe2WXM2LDn-oyg" name="firstName" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tsMYMWAHEe2WXM2LDn-oyg" name="id" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tsM_QGAHEe2WXM2LDn-oyg" name="redList">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttIMUGAHEe2WXM2LDn-oyg" name="lastName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttJacmAHEe2WXM2LDn-oyg" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ttKBgWAHEe2WXM2LDn-oyg" name="category">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsujsWAHEe2WXM2LDn-oyg" name="User" specification="_tm8r0GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsujsmAHEe2WXM2LDn-oyg" name="firstName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsujs2AHEe2WXM2LDn-oyg" name="lastName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsujtGAHEe2WXM2LDn-oyg" name="email">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsujtWAHEe2WXM2LDn-oyg" name="category">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsujtmAHEe2WXM2LDn-oyg" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsujt2AHEe2WXM2LDn-oyg" name="redList">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsujuGAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" direction="return"/>
+          <language>java</language>
+          <body>this.firstName = firstName;&#xD;
+		this.lastName = lastName;&#xD;
+		this.email = email;&#xD;
+		this.category = category;&#xD;
+		this.id = id;&#xD;
+		this.redList = redList;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsujuWAHEe2WXM2LDn-oyg" name="getLastName" specification="_tm958GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsujumAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.lastName; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsvKwGAHEe2WXM2LDn-oyg" name="getCategory" specification="_tm-hAWAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsvKwWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.category; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsvKwmAHEe2WXM2LDn-oyg" name="getEmail" specification="_tm_IEWAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsvKw2AHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.email.split(&quot;@&quot;)[0]; </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tm8r0GAHEe2WXM2LDn-oyg" name="User" visibility="package" method="_tsujsWAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tm9S5WAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tm9S5mAHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tm8r0WAHEe2WXM2LDn-oyg" name="firstName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tm9S4GAHEe2WXM2LDn-oyg" name="lastName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tm9S4WAHEe2WXM2LDn-oyg" name="email">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tm9S4mAHEe2WXM2LDn-oyg" name="category">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tm9S42AHEe2WXM2LDn-oyg" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tm9S5GAHEe2WXM2LDn-oyg" name="redList">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tm9S52AHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tm958GAHEe2WXM2LDn-oyg" name="getLastName" method="_tsujuWAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tm-hAGAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tm-hAWAHEe2WXM2LDn-oyg" name="getCategory" method="_tsvKwGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tm_IEGAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tm_IEWAHEe2WXM2LDn-oyg" name="getEmail" method="_tsvKwmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tm_vIGAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttdjgGAHEe2WXM2LDn-oyg" name="" memberEnd="_ttdjgWAHEe2WXM2LDn-oyg _tsIt0GAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttdjgWAHEe2WXM2LDn-oyg" name="" type="_tmYEEGAHEe2WXM2LDn-oyg" association="_ttdjgGAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tteKkWAHEe2WXM2LDn-oyg" name="" memberEnd="_tteKkmAHEe2WXM2LDn-oyg _tsJU4GAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_tteKkmAHEe2WXM2LDn-oyg" name="" type="_tmYEEGAHEe2WXM2LDn-oyg" association="_tteKkWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttexoWAHEe2WXM2LDn-oyg" name="" memberEnd="_ttexomAHEe2WXM2LDn-oyg _tsJ78GAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttexomAHEe2WXM2LDn-oyg" name="" type="_tmYEEGAHEe2WXM2LDn-oyg" association="_ttexoWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tjjZkWAHEe2WXM2LDn-oyg" name="application">
+      <packagedElement xmi:type="uml:Class" xmi:id="_tnCLYGAHEe2WXM2LDn-oyg" name="BorrowFrame">
+        <ownedAttribute xmi:id="_tsO0cGAHEe2WXM2LDn-oyg" name="gridUp" visibility="package" type="_trcKQWAHEe2WXM2LDn-oyg" association="_ttfYsWAHEe2WXM2LDn-oyg"/>
+        <ownedAttribute xmi:id="_tsPbgWAHEe2WXM2LDn-oyg" name="borrowStage" visibility="package" type="_trSZQGAHEe2WXM2LDn-oyg" association="_ttgm0GAHEe2WXM2LDn-oyg"/>
+        <ownedAttribute xmi:id="_tsQCkWAHEe2WXM2LDn-oyg" name="isManager" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tsQpoGAHEe2WXM2LDn-oyg" name="table" visibility="package" type="_tr0kwGAHEe2WXM2LDn-oyg" association="_tthN4GAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tswY4GAHEe2WXM2LDn-oyg" name="BorrowFrame" specification="_tnEAkGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tswY4WAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tswY4mAHEe2WXM2LDn-oyg" type="_tnCLYGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.isManager = isManager;&#xD;
+		&#xD;
+		// Creating and customizing stage&#xD;
+		borrowStage = new Stage();&#xD;
+		borrowStage.setTitle(&quot;CS library - borrow books&quot;);&#xD;
+		borrowStage.getIcons().add(new Image(&quot;/book_icon.png&quot;));&#xD;
+		&#xD;
+		BorderPane border = new BorderPane();&#xD;
+		gridUp = new GridPane();&#xD;
+		&#xD;
+		gridUp.setHgap(5);&#xD;
+		gridUp.setVgap(10);&#xD;
+		gridUp.setPadding(new Insets(5, 5, 5, 5));&#xD;
+		&#xD;
+     ColumnConstraints col1 = new ColumnConstraints();&#xD;
+     ColumnConstraints col2 = new ColumnConstraints();&#xD;
+     ColumnConstraints col3 = new ColumnConstraints();&#xD;
+     ColumnConstraints col4 = new ColumnConstraints();&#xD;
+     &#xD;
+     col1.setPercentWidth(22);&#xD;
+     col2.setPercentWidth(22);&#xD;
+     col3.setPercentWidth(22);&#xD;
+     col4.setPercentWidth(22);&#xD;
+&#xD;
+     gridUp.getColumnConstraints().addAll(col1,col2,col3, col4);&#xD;
+		&#xD;
+     addText(&quot;Title:&quot;, 0, 0);&#xD;
+     addText(&quot;Year:&quot;, 1, 0);&#xD;
+     addText(&quot;Author:&quot;, 2, 0);&#xD;
+     addText(&quot;ISBN:&quot;, 3, 0);&#xD;
+     &#xD;
+     TextField titleField = new TextField();&#xD;
+     TextField yearField = new TextField();&#xD;
+     TextField authorField = new TextField();&#xD;
+     TextField isbnField = new TextField();&#xD;
+     &#xD;
+     Button filter = new Button(&quot;Filter&quot;);&#xD;
+     filter.setStyle(&quot;-fx-background-color: #b00739; -fx-text-fill: #ffffff; -fx-cursor: hand;&quot;);&#xD;
+     &#xD;
+     gridUp.add(titleField, 0, 1);&#xD;
+     gridUp.add(yearField, 1, 1);&#xD;
+     gridUp.add(authorField, 2, 1);&#xD;
+     gridUp.add(isbnField, 3, 1);&#xD;
+     gridUp.add(filter, 4, 1);&#xD;
+		&#xD;
+		table = new TableView();&#xD;
+		&#xD;
+     TableColumn&lt;String, Book> cl1 = new TableColumn&lt;>(&quot;Book title&quot;);&#xD;
+     TableColumn&lt;Integer, Book> cl2 = new TableColumn&lt;>(&quot;Edition&quot;);&#xD;
+     TableColumn&lt;String, Book> cl3 = new TableColumn&lt;>(&quot;Author&quot;);&#xD;
+     TableColumn&lt;Integer, Book> cl4 = new TableColumn&lt;>(&quot;Copies&quot;);&#xD;
+     TableColumn&lt;Integer, Book> cl5 = new TableColumn&lt;>(&quot;Available&quot;);&#xD;
+     &#xD;
+     cl1.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;title&quot;));&#xD;
+     cl2.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;publicationYear&quot;));&#xD;
+     cl3.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;author&quot;));&#xD;
+     cl4.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;copies&quot;));&#xD;
+     cl5.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;available&quot;));&#xD;
+     &#xD;
+     table.getColumns().addAll(cl1, cl2, cl3, cl4, cl5);&#xD;
+     &#xD;
+     Text txt = new Text();&#xD;
+     txt.setFill(Color.FIREBRICK);&#xD;
+     &#xD;
+     // Consulting user situation and available books&#xD;
+     List&lt;Object> o = Controller.getController().borrowBooks();&#xD;
+     if ((int)o.get(0) == 1)&#xD;
+     	txt.setText(&quot;You cannot borrow books while on red list.&quot;);&#xD;
+     &#xD;
+     else if ((int)o.get(0) == 2)&#xD;
+     	txt.setText(&quot;You have achieved the maximum number of borrows for your category.&quot;);&#xD;
+     &#xD;
+     else&#xD;
+     	txt.setText(&quot;There are no books available to borrow.&quot;);&#xD;
+     &#xD;
+     final ObservableList&lt;Book> masterData = FXCollections.observableArrayList();&#xD;
+		for (Book b : (List&lt;Book>)o.get(1)) {&#xD;
+			masterData.add(b);&#xD;
+		}&#xD;
+		&#xD;
+		table.setPlaceholder(txt);&#xD;
+     table.setItems(masterData);   &#xD;
+     addButtonToTable();&#xD;
+		&#xD;
+     ImageView view = new ImageView(&quot;/returnPage.png&quot;);&#xD;
+     view.setFitHeight(25);&#xD;
+     view.setPreserveRatio(true);&#xD;
+     Button ret = new Button();&#xD;
+     ret.setPrefSize(20, 20);&#xD;
+     ret.setGraphic(view);&#xD;
+     ret.setStyle(&quot;-fx-background-color: transparent; -fx-cursor: hand;&quot;);&#xD;
+     &#xD;
+     ret.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new MenuFrame(isManager);&#xD;
+         	borrowStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     FilteredList&lt;Book> filteredData = new FilteredList&lt;>(masterData, p -> true);&#xD;
+     filter.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+ 			filteredData.setPredicate(book -> {&#xD;
+ 				&#xD;
+ 				boolean titleSelected = !titleField.getText().equals(&quot;&quot;);&#xD;
+ 				boolean yearSelected = !yearField.getText().equals(&quot;&quot;);&#xD;
+ 				boolean authorSelected = !authorField.getText().equals(&quot;&quot;);&#xD;
+ 				boolean isbnSelected = !isbnField.getText().equals(&quot;&quot;);&#xD;
+ 				&#xD;
+ 				boolean t = book.getTitle().toLowerCase().contains(titleField.getText().toLowerCase());&#xD;
+ 				boolean y = String.valueOf(book.getPublicationYear()).toLowerCase().contains(yearField.getText().toLowerCase());&#xD;
+ 				boolean a = book.getAuthor().toLowerCase().contains(authorField.getText().toLowerCase());&#xD;
+ 				boolean i = book.getIsbn().toLowerCase().contains(isbnField.getText().toLowerCase());&#xD;
+ 				&#xD;
+ 				if (titleSelected &amp;&amp; yearSelected &amp;&amp; authorSelected &amp;&amp; isbnSelected) return t &amp;&amp; y &amp;&amp; a &amp;&amp; i;&#xD;
+ 				if (titleSelected &amp;&amp; yearSelected &amp;&amp; authorSelected) return t &amp;&amp; y &amp;&amp; a;&#xD;
+ 				if (titleSelected &amp;&amp; yearSelected &amp;&amp; isbnSelected) return t &amp;&amp; y &amp;&amp; i;&#xD;
+ 				if (titleSelected &amp;&amp; authorSelected &amp;&amp; isbnSelected) return t &amp;&amp; a &amp;&amp; i;&#xD;
+ 				if (yearSelected &amp;&amp; isbnSelected &amp;&amp; authorSelected) return y &amp;&amp; i &amp;&amp; a;&#xD;
+ 				if (titleSelected &amp;&amp; yearSelected) return t &amp;&amp; y;&#xD;
+ 				if (titleSelected &amp;&amp; isbnSelected) return t &amp;&amp; i;&#xD;
+ 				if (titleSelected &amp;&amp; authorSelected) return t &amp;&amp; a;&#xD;
+ 				if (yearSelected &amp;&amp; isbnSelected) return y &amp;&amp; i;&#xD;
+ 				if (yearSelected &amp;&amp; authorSelected) return y &amp;&amp; a;&#xD;
+ 				if (isbnSelected &amp;&amp; authorSelected) return i &amp;&amp; a;&#xD;
+ 				if (titleSelected) return t;&#xD;
+ 				if (yearSelected) return y;&#xD;
+ 				if (authorSelected) return a;&#xD;
+ 				if (isbnSelected) return i;&#xD;
+ 				&#xD;
+ 				return true;&#xD;
+ 			});&#xD;
+ 			&#xD;
+ 			SortedList&lt;Book> sortedData = new SortedList&lt;>(filteredData);&#xD;
+ 			sortedData.comparatorProperty().bind(table.comparatorProperty());&#xD;
+ 			table.setItems(sortedData);&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     border.setTop(gridUp);&#xD;
+     border.setCenter(table);&#xD;
+     border.setBottom(ret);&#xD;
+     borrowStage.setScene(new Scene(border, 550, 450));&#xD;
+     borrowStage.show();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tswY42AHEe2WXM2LDn-oyg" name="addText" specification="_tnF1wmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tswY5GAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tswY5WAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tswY5mAHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Text text = new Text(comment);&#xD;
+     text.setFont(Font.font(&quot;Tahoma&quot;, FontWeight.NORMAL, 12));&#xD;
+     gridUp.add(text, column, row);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tswY52AHEe2WXM2LDn-oyg" name="addButtonToTable" specification="_tnHD4GAHEe2WXM2LDn-oyg">
+          <language>java</language>
+          <body>TableColumn&lt;Book, Void> colBtn = new TableColumn(&quot;&quot;);&#xD;
+		&#xD;
+     Callback&lt;TableColumn&lt;Book, Void>, TableCell&lt;Book, Void>> cellFactory = new Callback&lt;TableColumn&lt;Book, Void>, TableCell&lt;Book, Void>>() {&#xD;
+         @Override&#xD;
+         public TableCell&lt;Book, Void> call(final TableColumn&lt;Book, Void> param) {&#xD;
+             final TableCell&lt;Book, Void> cell = new TableCell&lt;Book, Void>() {&#xD;
+                 private final Button btn = new Button(&quot;borrow&quot;);&#xD;
+                 {&#xD;
+                     btn.setOnAction((ActionEvent event) -> {&#xD;
+                         Book data = getTableView().getItems().get(getIndex());&#xD;
+                         Controller.getController().borrowBook(data);&#xD;
+                         &#xD;
+                 		Alert alert = new Alert(AlertType.INFORMATION);&#xD;
+                 		alert.setTitle(null);&#xD;
+                 		alert.setHeaderText(null);&#xD;
+                 		alert.setContentText(&quot;Book successfully borrowed!&quot;);&#xD;
+                 		alert.showAndWait();&#xD;
+                 		&#xD;
+                     	new MenuFrame(isManager);&#xD;
+                     	borrowStage.close();&#xD;
+                     });&#xD;
+                 }&#xD;
+&#xD;
+                 @Override&#xD;
+                 public void updateItem(Void item, boolean empty) {&#xD;
+                     super.updateItem(item, empty);&#xD;
+                     if (empty) &#xD;
+                         setGraphic(null);&#xD;
+                     else &#xD;
+                         setGraphic(btn);&#xD;
+                 }&#xD;
+             };&#xD;
+             return cell;&#xD;
+         }&#xD;
+		};&#xD;
+		&#xD;
+     colBtn.setCellFactory(cellFactory);&#xD;
+     table.getColumns().add(colBtn);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tnEAkGAHEe2WXM2LDn-oyg" name="BorrowFrame" visibility="package" method="_tswY4GAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tnEnoGAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tnEnoWAHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tnEAkWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnFOsGAHEe2WXM2LDn-oyg" type="_tnCLYGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnF1wmAHEe2WXM2LDn-oyg" name="addText" visibility="private" method="_tswY42AHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tnGc0GAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnGc0WAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnGc0mAHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnHD4GAHEe2WXM2LDn-oyg" name="addButtonToTable" visibility="private" method="_tswY52AHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tnKuQGAHEe2WXM2LDn-oyg" name="ConsultBorrowFrame">
+        <ownedAttribute xmi:id="_tsR3wGAHEe2WXM2LDn-oyg" name="gridUp" visibility="package" type="_trcKQWAHEe2WXM2LDn-oyg" association="_tth08GAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsw_8GAHEe2WXM2LDn-oyg" name="ConsultBorrowFrame" specification="_tnL8YGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsw_8WAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsw_8mAHEe2WXM2LDn-oyg" type="_tnKuQGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Stage consultBorrowStage = new Stage();&#xD;
+		consultBorrowStage.setTitle(&quot;CS library - manage borrowings&quot;);&#xD;
+		consultBorrowStage.getIcons().add(new Image(&quot;/book_icon.png&quot;));&#xD;
+		&#xD;
+		BorderPane border = new BorderPane();&#xD;
+		gridUp = new GridPane();&#xD;
+		&#xD;
+		gridUp.setHgap(5);&#xD;
+		gridUp.setVgap(10);&#xD;
+		gridUp.setPadding(new Insets(5, 5, 5, 5));&#xD;
+     &#xD;
+     addText(&quot;Last name:&quot;, 0, 0);&#xD;
+     addText(&quot;Category:&quot;, 1, 0);&#xD;
+     addText(&quot;Book Title:&quot;, 2, 0);&#xD;
+     addText(&quot;Late:&quot;, 3, 0);&#xD;
+     &#xD;
+     TextField lastNameField = new TextField();&#xD;
+     TextField categoryField = new TextField();&#xD;
+     TextField titleField = new TextField();&#xD;
+     CheckBox checkBox = new CheckBox();&#xD;
+     &#xD;
+     Button filter = new Button(&quot;Filter&quot;);&#xD;
+     filter.setStyle(&quot;-fx-background-color: #b00739; -fx-text-fill: #ffffff; -fx-cursor: hand;&quot;);&#xD;
+     &#xD;
+     gridUp.add(lastNameField, 0, 1);&#xD;
+     gridUp.add(categoryField, 1, 1);&#xD;
+     gridUp.add(titleField, 2, 1);&#xD;
+     gridUp.add(checkBox, 3, 1);&#xD;
+     gridUp.add(filter, 4, 1);&#xD;
+     &#xD;
+		TableView table = new TableView();&#xD;
+     &#xD;
+     TableColumn&lt;String, Borrow> cl1 = new TableColumn&lt;>(&quot;First name&quot;);&#xD;
+     TableColumn&lt;String, Borrow> cl2 = new TableColumn&lt;>(&quot;Last name&quot;);&#xD;
+     TableColumn&lt;String, Borrow> cl3 = new TableColumn&lt;>(&quot;Category&quot;);&#xD;
+     TableColumn&lt;String, Borrow> cl4 = new TableColumn&lt;>(&quot;Book title&quot;);&#xD;
+     TableColumn&lt;String, Borrow> cl5 = new TableColumn&lt;>(&quot;Borrowing date&quot;);&#xD;
+     TableColumn&lt;Integer, Borrow> cl6 = new TableColumn&lt;>(&quot;Duration (months)&quot;);&#xD;
+     TableColumn&lt;Integer, Borrow> cl7 = new TableColumn&lt;>(&quot;Allowed Duration&quot;);&#xD;
+     &#xD;
+     cl1.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;firstName&quot;));&#xD;
+     cl2.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;lastName&quot;));&#xD;
+     cl3.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;category&quot;));&#xD;
+     cl4.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;title&quot;));&#xD;
+     cl5.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;borrowDate&quot;));&#xD;
+     cl6.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;duration&quot;));&#xD;
+     cl7.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;maxDuration&quot;));&#xD;
+     &#xD;
+     table.getColumns().addAll(cl1, cl2, cl3, cl4, cl5, cl6, cl7);&#xD;
+     &#xD;
+     // Consulting borrowed books&#xD;
+     final ObservableList&lt;Borrow> masterData = FXCollections.observableArrayList();&#xD;
+		for (Borrow c : Controller.getController().consultBorrows()) {&#xD;
+			masterData.add(c);&#xD;
+		}&#xD;
+     table.setItems(masterData);   &#xD;
+    &#xD;
+     Text txt = new Text();&#xD;
+     txt.setFill(Color.FIREBRICK);&#xD;
+     txt.setText(&quot;There are no results for this search.&quot;);&#xD;
+     table.setPlaceholder(txt);&#xD;
+     &#xD;
+     ImageView view = new ImageView(&quot;/returnPage.png&quot;);&#xD;
+     view.setFitHeight(25);&#xD;
+     view.setPreserveRatio(true);&#xD;
+     Button ret = new Button();&#xD;
+     ret.setPrefSize(20, 20);&#xD;
+     ret.setGraphic(view);&#xD;
+     ret.setStyle(&quot;-fx-background-color: transparent; -fx-cursor: hand;&quot;);&#xD;
+     &#xD;
+     ret.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new MenuFrame(isManager);&#xD;
+         	consultBorrowStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     FilteredList&lt;Borrow> filteredData = new FilteredList&lt;>(masterData, p -> true);&#xD;
+     filter.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+ 			filteredData.setPredicate(consult -> {&#xD;
+ 				&#xD;
+ 				boolean nameSelected = !lastNameField.getText().equals(&quot;&quot;);&#xD;
+ 				boolean categorySelected = !categoryField.getText().equals(&quot;&quot;);&#xD;
+ 				boolean titleSelected = !titleField.getText().equals(&quot;&quot;);&#xD;
+ 				boolean lateSelected = checkBox.isSelected();&#xD;
+ 				&#xD;
+ 				boolean n = consult.getLastName().toLowerCase().contains(lastNameField.getText().toLowerCase());&#xD;
+ 				boolean c = consult.getCategory().toLowerCase().contains(categoryField.getText().toLowerCase());&#xD;
+ 				boolean t = consult.getTitle().toLowerCase().contains(titleField.getText().toLowerCase());&#xD;
+ 				boolean l = consult.getDuration() > consult.getMaxDuration();&#xD;
+ 				&#xD;
+ 				if (nameSelected &amp;&amp; categorySelected &amp;&amp; titleSelected &amp;&amp; lateSelected) return n &amp;&amp; c &amp;&amp; t &amp;&amp; l;&#xD;
+ 				if (nameSelected &amp;&amp; categorySelected &amp;&amp; titleSelected) return n &amp;&amp; c &amp;&amp; t;&#xD;
+ 				if (nameSelected &amp;&amp; categorySelected &amp;&amp; lateSelected) return n &amp;&amp; c &amp;&amp; l;&#xD;
+ 				if (nameSelected &amp;&amp; titleSelected &amp;&amp; lateSelected) return n &amp;&amp; t &amp;&amp; l;&#xD;
+ 				if (categorySelected &amp;&amp; lateSelected &amp;&amp; titleSelected) return c &amp;&amp; l &amp;&amp; t;&#xD;
+ 				if (nameSelected &amp;&amp; categorySelected) return n &amp;&amp; c;&#xD;
+ 				if (nameSelected &amp;&amp; lateSelected) return n &amp;&amp; l;&#xD;
+ 				if (nameSelected &amp;&amp; titleSelected) return n &amp;&amp; t;&#xD;
+ 				if (categorySelected &amp;&amp; lateSelected) return c &amp;&amp; l;&#xD;
+ 				if (categorySelected &amp;&amp; titleSelected) return c &amp;&amp; t;&#xD;
+ 				if (lateSelected &amp;&amp; titleSelected) return l &amp;&amp; t;&#xD;
+ 				if (nameSelected) return n;&#xD;
+ 				if (categorySelected) return c;&#xD;
+ 				if (titleSelected) return t;&#xD;
+ 				if (lateSelected) return l;&#xD;
+ 				&#xD;
+ 				return true;&#xD;
+ 			});&#xD;
+ 			&#xD;
+ 			SortedList&lt;Borrow> sortedData = new SortedList&lt;>(filteredData);&#xD;
+ 			sortedData.comparatorProperty().bind(table.comparatorProperty());&#xD;
+ 			table.setItems(sortedData);&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     border.setTop(gridUp);&#xD;
+     border.setCenter(table);&#xD;
+     border.setBottom(ret);&#xD;
+     consultBorrowStage.setScene(new Scene(border, 550, 450));&#xD;
+     consultBorrowStage.show();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsxnAGAHEe2WXM2LDn-oyg" name="addText" specification="_tnNKgmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsxnAWAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsxnAmAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsxnA2AHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Text text = new Text(comment);&#xD;
+     text.setFont(Font.font(&quot;Tahoma&quot;, FontWeight.NORMAL, 12));&#xD;
+     gridUp.add(text, column, row);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tnL8YGAHEe2WXM2LDn-oyg" name="ConsultBorrowFrame" visibility="package" method="_tsw_8GAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tnL8YmAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tnL8Y2AHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tnL8YWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnMjcGAHEe2WXM2LDn-oyg" type="_tnKuQGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnNKgmAHEe2WXM2LDn-oyg" name="addText" visibility="private" method="_tsxnAGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tnNxkGAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnNxkWAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnNxkmAHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tnO_sGAHEe2WXM2LDn-oyg" name="InitialFrame">
+        <generalization xmi:id="_tr3oEGAHEe2WXM2LDn-oyg" general="_trWDoGAHEe2WXM2LDn-oyg"/>
+        <ownedAttribute xmi:id="_tsSe0WAHEe2WXM2LDn-oyg" name="ctrl" visibility="private" isStatic="true" type="_tlmA8GAHEe2WXM2LDn-oyg" association="_tticAWAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsxnBGAHEe2WXM2LDn-oyg" name="main" specification="_tnQ04GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsxnBWAHEe2WXM2LDn-oyg" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsxnBmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>ctrl = Controller.getController();&#xD;
+     launch();&#xD;
+     ctrl.close();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsyOEGAHEe2WXM2LDn-oyg" name="start" specification="_tr3BAGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsyOEWAHEe2WXM2LDn-oyg" name="primaryStage" type="_trSZQGAHEe2WXM2LDn-oyg"/>
+          <language>java</language>
+          <body>// Creating and customizing stage&#xD;
+     primaryStage.setTitle(&quot;CS Library - login&quot;);&#xD;
+     primaryStage.getIcons().add(new Image(&quot;/book_icon.png&quot;));&#xD;
+     &#xD;
+     GridPane grid = new GridPane();&#xD;
+     grid.setAlignment(Pos.CENTER);&#xD;
+     grid.setHgap(10);&#xD;
+     grid.setVgap(10);&#xD;
+     grid.setPadding(new Insets(25, 25, 25, 25));&#xD;
+&#xD;
+     primaryStage.setScene(new Scene(grid, 300, 275));&#xD;
+     &#xD;
+     Text scenetitle = new Text(&quot;Welcome, reader!&quot;);&#xD;
+     scenetitle.setFont(Font.font(&quot;Tahoma&quot;, FontWeight.NORMAL, 20));&#xD;
+     grid.add(scenetitle, 0, 0, 2, 1);&#xD;
+&#xD;
+     Label userName = new Label(&quot;Email:&quot;);&#xD;
+     grid.add(userName, 0, 1);&#xD;
+&#xD;
+     TextField userTextField = new TextField();&#xD;
+     grid.add(userTextField, 1, 1);&#xD;
+&#xD;
+     Label pw = new Label(&quot;Password:&quot;);&#xD;
+     grid.add(pw, 0, 2);&#xD;
+&#xD;
+     PasswordField passwordTextFiled = new PasswordField();&#xD;
+     grid.add(passwordTextFiled, 1, 2);&#xD;
+     &#xD;
+     Button btn = new Button(&quot;Sign in&quot;);&#xD;
+     btn.setStyle(&quot;-fx-background-color: #b00739; -fx-text-fill: #ffffff; -fx-cursor: hand;&quot;);&#xD;
+     &#xD;
+     HBox hbBtn = new HBox(10);&#xD;
+     hbBtn.setAlignment(Pos.BOTTOM_RIGHT);&#xD;
+     hbBtn.getChildren().add(btn);&#xD;
+     grid.add(hbBtn, 1, 4);&#xD;
+     &#xD;
+     Text actiontarget = new Text();&#xD;
+     grid.add(actiontarget, 1, 5);&#xD;
+     &#xD;
+     // Checking login and rendering menu if login is successful&#xD;
+     btn.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	&#xD;
+             if (ctrl.checkLogin(userTextField.getText(), passwordTextFiled.getText())) {&#xD;
+                 actiontarget.setFill(Color.FORESTGREEN);&#xD;
+                 actiontarget.setText(&quot;Successful login.&quot;);&#xD;
+                 primaryStage.close();&#xD;
+             }&#xD;
+             else {&#xD;
+                 actiontarget.setFill(Color.FIREBRICK);&#xD;
+                 actiontarget.setText(&quot;Failed to log in. Please try again.&quot;);&#xD;
+             }&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     primaryStage.show();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tnQ04GAHEe2WXM2LDn-oyg" name="main" isStatic="true" method="_tsxnBGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tnQ04WAHEe2WXM2LDn-oyg" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tnRb8GAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tr3BAGAHEe2WXM2LDn-oyg" name="start" method="_tsyOEGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tr3BAWAHEe2WXM2LDn-oyg" name="primaryStage" type="_trSZQGAHEe2WXM2LDn-oyg"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tnT4MGAHEe2WXM2LDn-oyg" name="MenuFrame">
+        <ownedAttribute xmi:id="_tsTs8GAHEe2WXM2LDn-oyg" name="grid" visibility="package" type="_trcKQWAHEe2WXM2LDn-oyg" association="_ttjDEWAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsyOEmAHEe2WXM2LDn-oyg" name="MenuFrame" specification="_tnUfQGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsyOE2AHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsyOFGAHEe2WXM2LDn-oyg" type="_tnT4MGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Creating and customizing stage&#xD;
+     Stage menuStage = new Stage();&#xD;
+     menuStage.setTitle(&quot;CS library - user menu&quot;);&#xD;
+     menuStage.getIcons().add(new Image(&quot;/book_icon.png&quot;));&#xD;
+     &#xD;
+     grid = new GridPane();&#xD;
+     grid.setHgap(10);&#xD;
+     grid.setVgap(10);&#xD;
+     grid.setPadding(new Insets(25, 25, 25, 25));&#xD;
+     &#xD;
+     // Resize grid columns size&#xD;
+     ColumnConstraints col1 = new ColumnConstraints();&#xD;
+     ColumnConstraints col2 = new ColumnConstraints();&#xD;
+     ColumnConstraints col3 = new ColumnConstraints();&#xD;
+     &#xD;
+     col1.setPercentWidth(1);&#xD;
+     col2.setPercentWidth(15);&#xD;
+     col3.setPercentWidth(40);&#xD;
+     &#xD;
+     grid.getColumnConstraints().addAll(col1,col2,col3);&#xD;
+     &#xD;
+     Text scenetitle = new Text(&quot;Hey there &quot; + Controller.getController().getAPI().getUser().getFirstName() + &quot; !&quot;);&#xD;
+     scenetitle.setFont(Font.font(&quot;Tahoma&quot;, FontWeight.NORMAL, 20));&#xD;
+     grid.add(scenetitle, 0, 0, 2, 1);&#xD;
+     &#xD;
+     Button consultSituation = addButton(&quot;/profile.png&quot;, &quot;Your situation&quot;, 1, 4);&#xD;
+     Button borrowBook = addButton(&quot;/borrow.png&quot;, &quot;Borrow book&quot;, 1, 7);&#xD;
+     Button returnBook = addButton(&quot;/return.png&quot;, &quot;Return book&quot;, 1, 10);&#xD;
+     &#xD;
+     consultSituation.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new SituationFrame(isManager);&#xD;
+         	menuStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     borrowBook.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new BorrowFrame(isManager);&#xD;
+         	menuStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     returnBook.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new ReturnFrame(isManager);&#xD;
+         	menuStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     // Adding tools just for managers&#xD;
+     if (isManager) {&#xD;
+         Button manageParameters = addButton(&quot;/settings.png&quot;, &quot;Manage categories&quot;, 3, 4);&#xD;
+         Button manageBorrowings = addButton(&quot;/borrowings.png&quot;, &quot;Manage borrowings&quot;, 3, 7);&#xD;
+         Button manageUsers = addButton(&quot;/multiple_users.png&quot;, &quot;Manage users&quot;, 3, 10);&#xD;
+         &#xD;
+         manageParameters.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+             @Override&#xD;
+             public void handle(ActionEvent e) {&#xD;
+             	new ParameterFrame(isManager);&#xD;
+             	menuStage.close();&#xD;
+             }&#xD;
+         });&#xD;
+         &#xD;
+         manageBorrowings.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+             @Override&#xD;
+             public void handle(ActionEvent e) {&#xD;
+             	new ConsultBorrowFrame(isManager);&#xD;
+             	menuStage.close();&#xD;
+             }&#xD;
+         });&#xD;
+         &#xD;
+         manageUsers.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+             @Override&#xD;
+             public void handle(ActionEvent e) {&#xD;
+             	new UserFrame(isManager);&#xD;
+             	menuStage.close();&#xD;
+             }&#xD;
+         });&#xD;
+     }&#xD;
+     &#xD;
+     menuStage.setScene(new Scene(grid, 550, 450));&#xD;
+     menuStage.show();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsy1IGAHEe2WXM2LDn-oyg" name="addButton" specification="_tnVtYGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsy1IWAHEe2WXM2LDn-oyg" name="path">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsy1ImAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsy1I2AHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsy1JGAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsy1JWAHEe2WXM2LDn-oyg" type="_trYf4GAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>ImageView view = new ImageView(new Image(path));&#xD;
+     view.setFitHeight(40);&#xD;
+     view.setPreserveRatio(true);&#xD;
+&#xD;
+     Button button = new Button();&#xD;
+     button.setPrefSize(50, 50);&#xD;
+     button.setGraphic(view);&#xD;
+     button.setStyle(&quot;-fx-background-color: transparent; -fx-cursor: hand;&quot;);&#xD;
+     grid.add(button, row, column);&#xD;
+     &#xD;
+     Text text = new Text(comment);&#xD;
+     text.setFont(Font.font(&quot;Tahoma&quot;, FontWeight.NORMAL, 15));&#xD;
+     grid.add(text, row+1, column);&#xD;
+     &#xD;
+     return button;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tnUfQGAHEe2WXM2LDn-oyg" name="MenuFrame" method="_tsyOEmAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tnVGUWAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tnVGUmAHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tnVGUGAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnVGU2AHEe2WXM2LDn-oyg" type="_tnT4MGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnVtYGAHEe2WXM2LDn-oyg" name="addButton" visibility="private" method="_tsy1IGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tnVtYWAHEe2WXM2LDn-oyg" name="path">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnVtYmAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnVtY2AHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnVtZGAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tr4PIGAHEe2WXM2LDn-oyg" type="_trYf4GAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tnXikGAHEe2WXM2LDn-oyg" name="ParameterFrame" visibility="package">
+        <ownedAttribute xmi:id="_tsUUAGAHEe2WXM2LDn-oyg" name="grid" visibility="package" type="_trcKQWAHEe2WXM2LDn-oyg" association="_ttjqIWAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tszcMGAHEe2WXM2LDn-oyg" name="ParameterFrame" specification="_tnYwsGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tszcMWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tszcMmAHEe2WXM2LDn-oyg" type="_tnXikGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Creating and customizing stage&#xD;
+		Stage parameterStage = new Stage();&#xD;
+		parameterStage.setTitle(&quot;CS library - manage categories&quot;);&#xD;
+		parameterStage.getIcons().add(new Image(&quot;/book_icon.png&quot;));&#xD;
+		&#xD;
+     grid = new GridPane();&#xD;
+     grid.setHgap(10);&#xD;
+     grid.setVgap(10);&#xD;
+     grid.setPadding(new Insets(25, 25, 25, 25));&#xD;
+     &#xD;
+     addText(&quot;Category: &quot;, 1, 2);&#xD;
+     addText(&quot;Maximum number of loans: &quot;, 1, 5);&#xD;
+     addText(&quot;Maximum duration of loans (months): &quot;, 1, 8);&#xD;
+     &#xD;
+     // Displaying existent categories&#xD;
+     ObservableList&lt;String> options = FXCollections.observableArrayList();&#xD;
+     ArrayList&lt;String> categories = Controller.getController().getCategories();&#xD;
+     for (int i=0; i&lt;categories.size(); i++) &#xD;
+     	options.add(categories.get(i));&#xD;
+     &#xD;
+     ComboBox&lt;String> comboBox = new ComboBox&lt;String>(options);&#xD;
+     comboBox.setStyle(&quot;-fx-cursor: hand;&quot;);&#xD;
+     comboBox.getSelectionModel().selectFirst();&#xD;
+     grid.add(comboBox, 2, 2);&#xD;
+&#xD;
+     Spinner&lt;Integer> loansSpinner = new Spinner&lt;>(0, 999, 0, 1);&#xD;
+     loansSpinner.setEditable(true);&#xD;
+     grid.add(loansSpinner, 2, 5);&#xD;
+     &#xD;
+     Spinner&lt;Integer> durationSpinner = new Spinner&lt;>(0, 999, 0, 1);&#xD;
+     durationSpinner.setEditable(true);&#xD;
+     grid.add(durationSpinner, 2, 8);&#xD;
+     &#xD;
+     Button register = new Button(&quot;Register&quot;);&#xD;
+     register.setStyle(&quot;-fx-background-color: #b00739; -fx-text-fill: #ffffff; -fx-font-size:15; -fx-cursor: hand;&quot;);&#xD;
+     register.setPrefSize(80, 40);&#xD;
+     grid.add(register, 2, 11);&#xD;
+     &#xD;
+     ImageView view = new ImageView(&quot;/returnPage.png&quot;);&#xD;
+     view.setFitHeight(40);&#xD;
+     view.setPreserveRatio(true);&#xD;
+     Button ret = new Button();&#xD;
+     ret.setPrefSize(50, 50);&#xD;
+     ret.setGraphic(view);&#xD;
+     ret.setStyle(&quot;-fx-background-color: transparent; -fx-cursor: hand;&quot;);&#xD;
+     grid.add(ret, 1, 21);&#xD;
+     &#xD;
+     register.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	&#xD;
+         	Text actiontarget = new Text();&#xD;
+         	grid.add(actiontarget, 2, 12);&#xD;
+         	&#xD;
+         	if (Controller.getController().setCategory(comboBox.getValue(), loansSpinner.getValue(), durationSpinner.getValue())) {&#xD;
+                 actiontarget.setFill(Color.FORESTGREEN);&#xD;
+                 actiontarget.setText(&quot;Parameters successfully modified.&quot;);&#xD;
+         	}&#xD;
+         	else {&#xD;
+                 actiontarget.setFill(Color.FIREBRICK);&#xD;
+                 actiontarget.setText(&quot;Error: parameters could not be modified.&quot;);&#xD;
+         	}&#xD;
+         	&#xD;
+         	PauseTransition pause = new PauseTransition(Duration.seconds(2));&#xD;
+         	pause.setOnFinished(event -> actiontarget.setText(null));&#xD;
+         	pause.play();&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     ret.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new MenuFrame(isManager);&#xD;
+         	parameterStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+		&#xD;
+     parameterStage.setScene(new Scene(grid, 550, 450));&#xD;
+     parameterStage.show();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tszcM2AHEe2WXM2LDn-oyg" name="addText" specification="_tnal4GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tszcNGAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tszcNWAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tszcNmAHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Text text = new Text(comment);&#xD;
+     text.setFont(Font.font(&quot;Tahoma&quot;, FontWeight.NORMAL, 15));&#xD;
+     grid.add(text, column, row);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tnYwsGAHEe2WXM2LDn-oyg" name="ParameterFrame" visibility="package" method="_tszcMGAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tnYwsmAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tnZXwGAHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tnYwsWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnZXwWAHEe2WXM2LDn-oyg" type="_tnXikGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnal4GAHEe2WXM2LDn-oyg" name="addText" visibility="private" method="_tszcM2AHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tnal4WAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnal4mAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnal42AHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tndCIGAHEe2WXM2LDn-oyg" name="ReturnFrame">
+        <ownedAttribute xmi:id="_tsU7EWAHEe2WXM2LDn-oyg" name="table" visibility="package" type="_tr0kwGAHEe2WXM2LDn-oyg" association="_ttkRMWAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ts0DQGAHEe2WXM2LDn-oyg" name="ReturnFrame" specification="_tneQQGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_ts0DQWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ts0DQmAHEe2WXM2LDn-oyg" type="_tndCIGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Stage returnStage = new Stage();&#xD;
+		returnStage.setTitle(&quot;CS library - return books&quot;);&#xD;
+		returnStage.getIcons().add(new Image(&quot;/book_icon.png&quot;));&#xD;
+		&#xD;
+		BorderPane border = new BorderPane();&#xD;
+		table = new TableView();&#xD;
+		&#xD;
+     TableColumn&lt;String, Borrow> cl1 = new TableColumn&lt;>(&quot;Book title&quot;);&#xD;
+     TableColumn&lt;Integer, Borrow> cl2 = new TableColumn&lt;>(&quot;Edition&quot;);&#xD;
+     TableColumn&lt;String, Borrow> cl3 = new TableColumn&lt;>(&quot;Author&quot;);&#xD;
+     TableColumn&lt;String, Borrow> cl4 = new TableColumn&lt;>(&quot;Borrowing Date&quot;);&#xD;
+     TableColumn&lt;String, Borrow> cl5 = new TableColumn&lt;>(&quot;Duration (months)&quot;);&#xD;
+     &#xD;
+     cl1.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;title&quot;));&#xD;
+     cl2.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;publicationYear&quot;));&#xD;
+     cl3.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;author&quot;));&#xD;
+     cl4.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;borrowDate&quot;));&#xD;
+     cl5.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;duration&quot;));&#xD;
+     &#xD;
+     table.getColumns().addAll(cl1, cl2, cl3, cl4, cl5);&#xD;
+		&#xD;
+     // Consult list of user's borrowed books&#xD;
+     final ObservableList&lt;Borrow> masterData = FXCollections.observableArrayList();&#xD;
+		for (Borrow b : Controller.getController().returnBooksList()) {&#xD;
+			masterData.add(b);&#xD;
+		}&#xD;
+     table.setItems(masterData);  &#xD;
+     &#xD;
+     Text txt = new Text();&#xD;
+     txt.setFill(Color.FIREBRICK);&#xD;
+     txt.setText(&quot;You don't have any borrowed books at the moment.&quot;);&#xD;
+     table.setPlaceholder(txt);&#xD;
+     &#xD;
+     addButtonToTable();&#xD;
+     &#xD;
+     ImageView view = new ImageView(&quot;/returnPage.png&quot;);&#xD;
+     view.setFitHeight(25);&#xD;
+     view.setPreserveRatio(true);&#xD;
+     Button ret = new Button();&#xD;
+     ret.setPrefSize(20, 20);&#xD;
+     ret.setGraphic(view);&#xD;
+     ret.setStyle(&quot;-fx-background-color: transparent; -fx-cursor: hand;&quot;);&#xD;
+&#xD;
+     ret.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new MenuFrame(isManager);&#xD;
+         	returnStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+		&#xD;
+     border.setCenter(table);&#xD;
+     border.setBottom(ret);&#xD;
+     returnStage.setScene(new Scene(border, 550, 450));&#xD;
+     returnStage.show();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ts0DQ2AHEe2WXM2LDn-oyg" name="addButtonToTable" specification="_tnfeY2AHEe2WXM2LDn-oyg">
+          <language>java</language>
+          <body>TableColumn&lt;Borrow, Void> colBtn = new TableColumn(&quot;&quot;);&#xD;
+		&#xD;
+     Callback&lt;TableColumn&lt;Borrow, Void>, TableCell&lt;Borrow, Void>> cellFactory = new Callback&lt;TableColumn&lt;Borrow, Void>, TableCell&lt;Borrow, Void>>() {&#xD;
+         @Override&#xD;
+         public TableCell&lt;Borrow, Void> call(final TableColumn&lt;Borrow, Void> param) {&#xD;
+             final TableCell&lt;Borrow, Void> cell = new TableCell&lt;Borrow, Void>() {&#xD;
+&#xD;
+                 private final Button btn = new Button(&quot;return&quot;);&#xD;
+                 {&#xD;
+                     btn.setOnAction((ActionEvent event) -> {&#xD;
+                     	Borrow data = getTableView().getItems().get(getIndex());&#xD;
+                         Controller.getController().returnBook(data);&#xD;
+                         getTableView().getItems().remove(data);&#xD;
+                     });&#xD;
+                 }&#xD;
+&#xD;
+                 @Override&#xD;
+                 public void updateItem(Void item, boolean empty) {&#xD;
+                     super.updateItem(item, empty);&#xD;
+                     if (empty) &#xD;
+                         setGraphic(null);&#xD;
+                     else &#xD;
+                         setGraphic(btn);&#xD;
+                 }&#xD;
+             };&#xD;
+             return cell;&#xD;
+         }&#xD;
+		};&#xD;
+		&#xD;
+     colBtn.setCellFactory(cellFactory);&#xD;
+     table.getColumns().add(colBtn);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tneQQGAHEe2WXM2LDn-oyg" name="ReturnFrame" visibility="package" method="_ts0DQGAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tneQQmAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tneQQ2AHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tneQQWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tne3UWAHEe2WXM2LDn-oyg" type="_tndCIGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnfeY2AHEe2WXM2LDn-oyg" name="addButtonToTable" visibility="private" method="_ts0DQ2AHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tnh6oGAHEe2WXM2LDn-oyg" name="SituationFrame" visibility="package">
+        <ownedAttribute xmi:id="_tsWJMGAHEe2WXM2LDn-oyg" name="grid" visibility="package" type="_trcKQWAHEe2WXM2LDn-oyg" association="_ttk4QWAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ts0qUGAHEe2WXM2LDn-oyg" name="SituationFrame" specification="_tnjIwGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_ts0qUWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ts0qUmAHEe2WXM2LDn-oyg" type="_tnh6oGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Creating and customizing stage&#xD;
+		Stage situationStage = new Stage();&#xD;
+		situationStage.setTitle(&quot;CS library - consult situation&quot;);&#xD;
+		situationStage.getIcons().add(new Image(&quot;/book_icon.png&quot;));&#xD;
+		&#xD;
+     grid = new GridPane();&#xD;
+     grid.setHgap(10);&#xD;
+     grid.setVgap(10);&#xD;
+     grid.setPadding(new Insets(25, 25, 25, 25));&#xD;
+     &#xD;
+     // Getting data from user&#xD;
+     int loans = Controller.getController().getNbLoans();&#xD;
+     int[] categoryData = Controller.getController().getCategoryData();&#xD;
+     &#xD;
+     addText(&quot;Name: &quot; + Controller.getController().getAPI().getUser().getFirstName() + &quot; &quot; + Controller.getController().getAPI().getUser().getLastName(), 1, 2, false);&#xD;
+     addText(&quot;Email CS: &quot; + Controller.getController().getAPI().getUser().getEmail(), 1, 5, false);&#xD;
+     addText(&quot;Category: &quot; + Controller.getController().getAPI().getUser().getCategory(), 1, 8, false);&#xD;
+     &#xD;
+     if (loans &lt;= categoryData[0]) &#xD;
+     	addText(&quot;Loans: &quot; + Integer.valueOf(loans) + &quot;/&quot; + Integer.valueOf(categoryData[0]), 1, 11, false);&#xD;
+&#xD;
+     else &#xD;
+     	addText(&quot;Loans: &quot; + Integer.valueOf(loans) + &quot;/&quot; + Integer.valueOf(categoryData[0]), 1, 11, true);&#xD;
+&#xD;
+     addText(&quot;Maximum loan duration: &quot; + Integer.valueOf(categoryData[1]) + &quot; months&quot;, 1, 14, false);&#xD;
+     &#xD;
+     if (Controller.getController().getAPI().getUser().getRedList()) &#xD;
+     	addText(&quot;Red list: Yes&quot;, 1, 17, true);&#xD;
+     else &#xD;
+     	addText(&quot;Red list: No&quot;, 1, 17, false);&#xD;
+     &#xD;
+     ImageView view = new ImageView(&quot;/returnPage.png&quot;);&#xD;
+     view.setFitHeight(40);&#xD;
+     view.setPreserveRatio(true);&#xD;
+     Button ret = new Button();&#xD;
+     ret.setPrefSize(50, 50);&#xD;
+     ret.setGraphic(view);&#xD;
+     ret.setStyle(&quot;-fx-background-color: transparent; -fx-cursor: hand;&quot;);&#xD;
+     grid.add(ret, 1, 21);&#xD;
+     &#xD;
+     ret.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new MenuFrame(isManager);&#xD;
+         	situationStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+		&#xD;
+     situationStage.setScene(new Scene(grid, 550, 450));&#xD;
+		situationStage.show();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ts0qU2AHEe2WXM2LDn-oyg" name="addText" specification="_tnjv0GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_ts0qVGAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ts0qVWAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ts0qVmAHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ts0qV2AHEe2WXM2LDn-oyg" name="red">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Text text = new Text(comment);&#xD;
+     text.setFont(Font.font(&quot;Tahoma&quot;, FontWeight.NORMAL, 15));&#xD;
+     if (red) &#xD;
+     	text.setFill(Color.FIREBRICK);&#xD;
+     grid.add(text, column, row);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tnjIwGAHEe2WXM2LDn-oyg" name="SituationFrame" visibility="package" method="_ts0qUGAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tnjIwmAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tnjIw2AHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tnjIwWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnjIxGAHEe2WXM2LDn-oyg" type="_tnh6oGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnjv0GAHEe2WXM2LDn-oyg" name="addText" visibility="private" method="_ts0qU2AHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tnjv0WAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnjv0mAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnjv02AHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnjv1GAHEe2WXM2LDn-oyg" name="red">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tnk98GAHEe2WXM2LDn-oyg" name="UserFrame">
+        <ownedAttribute xmi:id="_tsWwQGAHEe2WXM2LDn-oyg" name="gridUp" visibility="package" type="_trcKQWAHEe2WXM2LDn-oyg" association="_ttlfUWAHEe2WXM2LDn-oyg"/>
+        <ownedAttribute xmi:id="_tsXXUWAHEe2WXM2LDn-oyg" name="table" visibility="package" type="_tr0kwGAHEe2WXM2LDn-oyg" association="_ttmGYWAHEe2WXM2LDn-oyg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ts1RYGAHEe2WXM2LDn-oyg" name="UserFrame" specification="_tnmMEGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_ts1RYWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ts1RYmAHEe2WXM2LDn-oyg" type="_tnk98GAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Stage userStage = new Stage();&#xD;
+		userStage.setTitle(&quot;CS library - manage users&quot;);&#xD;
+		userStage.getIcons().add(new Image(&quot;/book_icon.png&quot;));&#xD;
+		&#xD;
+		BorderPane border = new BorderPane();&#xD;
+		gridUp = new GridPane();&#xD;
+		&#xD;
+		gridUp.setHgap(10);&#xD;
+		gridUp.setVgap(10);&#xD;
+		gridUp.setPadding(new Insets(5, 5, 5, 5));&#xD;
+		&#xD;
+     addText(&quot;Last name:&quot;, 1, 0);&#xD;
+     addText(&quot;Category:&quot;, 2, 0);&#xD;
+     addText(&quot;Late:&quot;, 3, 0);&#xD;
+     addText(&quot;Red List:&quot;, 4, 0);&#xD;
+     &#xD;
+     TextField lastNameField = new TextField();&#xD;
+     TextField categoryField = new TextField();&#xD;
+     CheckBox lateBox = new CheckBox();&#xD;
+     CheckBox redBox = new CheckBox();&#xD;
+     &#xD;
+     Button filter = new Button(&quot;Filter&quot;);&#xD;
+     filter.setStyle(&quot;-fx-background-color: #b00739; -fx-text-fill: #ffffff; -fx-cursor: hand;&quot;);&#xD;
+     &#xD;
+     gridUp.add(lastNameField, 1, 1);&#xD;
+     gridUp.add(categoryField, 2, 1);&#xD;
+     gridUp.add(lateBox, 3, 1);&#xD;
+     gridUp.add(redBox, 4, 1);&#xD;
+     gridUp.add(filter, 5, 1);&#xD;
+     &#xD;
+		table = new TableView();&#xD;
+     &#xD;
+     TableColumn&lt;String, User> cl1 = new TableColumn&lt;>(&quot;First name&quot;);&#xD;
+     TableColumn&lt;String, User> cl2 = new TableColumn&lt;>(&quot;Last name&quot;);&#xD;
+     TableColumn&lt;String, User> cl3 = new TableColumn&lt;>(&quot;Email CS&quot;);&#xD;
+     TableColumn&lt;String, User> cl4 = new TableColumn&lt;>(&quot;Category&quot;);&#xD;
+     TableColumn&lt;Boolean, User> cl5 = new TableColumn&lt;>(&quot;Red List&quot;);&#xD;
+     &#xD;
+     cl1.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;firstName&quot;));&#xD;
+     cl2.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;lastName&quot;));&#xD;
+     cl3.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;email&quot;));&#xD;
+     cl4.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;category&quot;));&#xD;
+     cl5.setCellValueFactory(new PropertyValueFactory&lt;>(&quot;redList&quot;));&#xD;
+     &#xD;
+     table.getColumns().addAll(cl1, cl2, cl3, cl4, cl5);&#xD;
+     &#xD;
+     // Consult list of all users&#xD;
+     final ObservableList&lt;User> masterData = FXCollections.observableArrayList();&#xD;
+		for (User u : Controller.getController().manageUsers()) {&#xD;
+			masterData.add(u);&#xD;
+		}&#xD;
+		&#xD;
+     table.setItems(masterData);   &#xD;
+     addButtonToTable();&#xD;
+     &#xD;
+     Text txt = new Text();&#xD;
+     txt.setFill(Color.FIREBRICK);&#xD;
+     txt.setText(&quot;There are no results for this search.&quot;);&#xD;
+     table.setPlaceholder(txt);&#xD;
+		&#xD;
+     ImageView view = new ImageView(&quot;/returnPage.png&quot;);&#xD;
+     view.setFitHeight(25);&#xD;
+     view.setPreserveRatio(true);&#xD;
+     Button ret = new Button();&#xD;
+     ret.setPrefSize(20, 20);&#xD;
+     ret.setGraphic(view);&#xD;
+     ret.setStyle(&quot;-fx-background-color: transparent; -fx-cursor: hand;&quot;);&#xD;
+     &#xD;
+     ret.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	new MenuFrame(isManager);&#xD;
+         	userStage.close();&#xD;
+         }&#xD;
+     });&#xD;
+		&#xD;
+     FilteredList&lt;User> filteredData = new FilteredList&lt;>(masterData, p -> true);&#xD;
+     filter.setOnAction(new EventHandler&lt;ActionEvent>() {&#xD;
+         @Override&#xD;
+         public void handle(ActionEvent e) {&#xD;
+         	List&lt;Integer> lateUsers = Controller.getController().filterUsers();&#xD;
+ 			filteredData.setPredicate(user -> {&#xD;
+ 				&#xD;
+ 				boolean nameSelected = !lastNameField.getText().equals(&quot;&quot;);&#xD;
+ 				boolean categorySelected = !categoryField.getText().equals(&quot;&quot;);&#xD;
+ 				boolean redSelected = redBox.isSelected();&#xD;
+ 				boolean lateSelected = lateBox.isSelected();&#xD;
+ 				&#xD;
+ 				boolean n = user.getLastName().toLowerCase().contains(lastNameField.getText().toLowerCase());&#xD;
+ 				boolean c = user.getCategory().toLowerCase().contains(categoryField.getText().toLowerCase());&#xD;
+ 				boolean r = user.getRedList();&#xD;
+ 				boolean l = lateUsers.contains(user.getId());&#xD;
+ 				&#xD;
+ 				if (nameSelected &amp;&amp; categorySelected &amp;&amp; redSelected &amp;&amp; lateSelected) return n &amp;&amp; c &amp;&amp; r &amp;&amp; l;&#xD;
+ 				if (nameSelected &amp;&amp; categorySelected &amp;&amp; redSelected) return n &amp;&amp; c &amp;&amp; r;&#xD;
+ 				if (nameSelected &amp;&amp; categorySelected &amp;&amp; lateSelected) return n &amp;&amp; c &amp;&amp; l;&#xD;
+ 				if (nameSelected &amp;&amp; redSelected &amp;&amp; lateSelected) return n &amp;&amp; r &amp;&amp; l;&#xD;
+ 				if (categorySelected &amp;&amp; lateSelected &amp;&amp; redSelected) return c &amp;&amp; l &amp;&amp; r;&#xD;
+ 				if (nameSelected &amp;&amp; categorySelected) return n &amp;&amp; c;&#xD;
+ 				if (nameSelected &amp;&amp; lateSelected) return n &amp;&amp; l;&#xD;
+ 				if (nameSelected &amp;&amp; redSelected) return n &amp;&amp; r;&#xD;
+ 				if (categorySelected &amp;&amp; lateSelected) return c &amp;&amp; l;&#xD;
+ 				if (categorySelected &amp;&amp; redSelected) return c &amp;&amp; r;&#xD;
+ 				if (lateSelected &amp;&amp; redSelected) return l &amp;&amp; r;&#xD;
+ 				if (nameSelected) return n;&#xD;
+ 				if (categorySelected) return c;&#xD;
+ 				if (redSelected) return r;&#xD;
+ 				if (lateSelected) return l;&#xD;
+ 				&#xD;
+ 				return true;&#xD;
+ 			});&#xD;
+ 			&#xD;
+ 			SortedList&lt;User> sortedData = new SortedList&lt;>(filteredData);&#xD;
+ 			sortedData.comparatorProperty().bind(table.comparatorProperty());&#xD;
+ 			table.setItems(sortedData);&#xD;
+         }&#xD;
+     });&#xD;
+     &#xD;
+     border.setTop(gridUp);&#xD;
+     border.setCenter(table);&#xD;
+     border.setBottom(ret);&#xD;
+     userStage.setScene(new Scene(border, 550, 450));&#xD;
+     userStage.show();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ts14cGAHEe2WXM2LDn-oyg" name="addText" specification="_tnoBQGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_ts14cWAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ts14cmAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ts14c2AHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Text text = new Text(comment);&#xD;
+     text.setFont(Font.font(&quot;Tahoma&quot;, FontWeight.NORMAL, 12));&#xD;
+     gridUp.add(text, column, row);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ts14dGAHEe2WXM2LDn-oyg" name="addButtonToTable" specification="_tnooUGAHEe2WXM2LDn-oyg">
+          <language>java</language>
+          <body>TableColumn&lt;User, Void> colBtn = new TableColumn(&quot;&quot;);&#xD;
+		&#xD;
+     Callback&lt;TableColumn&lt;User, Void>, TableCell&lt;User, Void>> cellFactory = new Callback&lt;TableColumn&lt;User, Void>, TableCell&lt;User, Void>>() {&#xD;
+         @Override&#xD;
+         public TableCell&lt;User, Void> call(final TableColumn&lt;User, Void> param) {&#xD;
+             final TableCell&lt;User, Void> cell = new TableCell&lt;User, Void>() {&#xD;
+                 private final Button btn = new Button(&quot;put/remove&quot;);&#xD;
+                 {&#xD;
+                     btn.setOnAction((ActionEvent event) -> {&#xD;
+                         User data = getTableView().getItems().get(getIndex());&#xD;
+                         User newData = Controller.getController().updateUser(data);&#xD;
+                         &#xD;
+                         table.getItems().set(getIndex(), newData);&#xD;
+                      // **ALERT** : THIS METHOD RAISES A BUG WHEN THE FILTER BUTTON IS CLICKED BEFORE CLICKING THE BUTTON IN THE ROW&#xD;
+                      // ALTHOUGH MODIFICATIONS IN THE DATABASE STILL HAPPEN, YOU CAN ONLY SEE SUCH MODIFICATIONS WHEN YOU CLICK ON THE FILTER BUTTON AGAIN OR RELOAD THE SCREEN&#xD;
+                     });&#xD;
+                 }&#xD;
+&#xD;
+                 @Override&#xD;
+                 public void updateItem(Void item, boolean empty) {&#xD;
+                     super.updateItem(item, empty);&#xD;
+                     if (empty) &#xD;
+                         setGraphic(null);&#xD;
+                     else &#xD;
+                         setGraphic(btn);&#xD;
+                 }&#xD;
+             };&#xD;
+             return cell;&#xD;
+         }&#xD;
+		};&#xD;
+		&#xD;
+     colBtn.setCellFactory(cellFactory);&#xD;
+     table.getColumns().add(colBtn);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tnmMEGAHEe2WXM2LDn-oyg" name="UserFrame" visibility="package" method="_ts1RYGAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tnmMEmAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tnmME2AHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tnmMEWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnmzIWAHEe2WXM2LDn-oyg" type="_tnk98GAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnoBQGAHEe2WXM2LDn-oyg" name="addText" visibility="private" method="_ts14cGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tnoBQWAHEe2WXM2LDn-oyg" name="comment">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnoBQmAHEe2WXM2LDn-oyg" name="column">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tnoBQ2AHEe2WXM2LDn-oyg" name="row">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tnooUGAHEe2WXM2LDn-oyg" name="addButtonToTable" visibility="private" method="_ts14dGAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttfYsWAHEe2WXM2LDn-oyg" name="" memberEnd="_ttfYsmAHEe2WXM2LDn-oyg _tsO0cGAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttfYsmAHEe2WXM2LDn-oyg" name="" type="_tnCLYGAHEe2WXM2LDn-oyg" association="_ttfYsWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttgm0GAHEe2WXM2LDn-oyg" name="" memberEnd="_ttgm0WAHEe2WXM2LDn-oyg _tsPbgWAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttgm0WAHEe2WXM2LDn-oyg" name="" type="_tnCLYGAHEe2WXM2LDn-oyg" association="_ttgm0GAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tthN4GAHEe2WXM2LDn-oyg" name="" memberEnd="_tthN4WAHEe2WXM2LDn-oyg _tsQpoGAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_tthN4WAHEe2WXM2LDn-oyg" name="" type="_tnCLYGAHEe2WXM2LDn-oyg" association="_tthN4GAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tth08GAHEe2WXM2LDn-oyg" name="" memberEnd="_tth08WAHEe2WXM2LDn-oyg _tsR3wGAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_tth08WAHEe2WXM2LDn-oyg" name="" type="_tnKuQGAHEe2WXM2LDn-oyg" association="_tth08GAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tticAWAHEe2WXM2LDn-oyg" name="" memberEnd="_tticAmAHEe2WXM2LDn-oyg _tsSe0WAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_tticAmAHEe2WXM2LDn-oyg" name="" type="_tnO_sGAHEe2WXM2LDn-oyg" association="_tticAWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttjDEWAHEe2WXM2LDn-oyg" name="" memberEnd="_ttjDEmAHEe2WXM2LDn-oyg _tsTs8GAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttjDEmAHEe2WXM2LDn-oyg" name="" type="_tnT4MGAHEe2WXM2LDn-oyg" association="_ttjDEWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttjqIWAHEe2WXM2LDn-oyg" name="" memberEnd="_ttjqImAHEe2WXM2LDn-oyg _tsUUAGAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttjqImAHEe2WXM2LDn-oyg" name="" type="_tnXikGAHEe2WXM2LDn-oyg" association="_ttjqIWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttkRMWAHEe2WXM2LDn-oyg" name="" memberEnd="_ttkRMmAHEe2WXM2LDn-oyg _tsU7EWAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttkRMmAHEe2WXM2LDn-oyg" name="" type="_tndCIGAHEe2WXM2LDn-oyg" association="_ttkRMWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttk4QWAHEe2WXM2LDn-oyg" name="" memberEnd="_ttk4QmAHEe2WXM2LDn-oyg _tsWJMGAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttk4QmAHEe2WXM2LDn-oyg" name="" type="_tnh6oGAHEe2WXM2LDn-oyg" association="_ttk4QWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttlfUWAHEe2WXM2LDn-oyg" name="" memberEnd="_ttlfUmAHEe2WXM2LDn-oyg _tsWwQGAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttlfUmAHEe2WXM2LDn-oyg" name="" type="_tnk98GAHEe2WXM2LDn-oyg" association="_ttlfUWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttmGYWAHEe2WXM2LDn-oyg" name="" memberEnd="_ttmGYmAHEe2WXM2LDn-oyg _tsXXUWAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttmGYmAHEe2WXM2LDn-oyg" name="" type="_tnk98GAHEe2WXM2LDn-oyg" association="_ttmGYWAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tjpgMGAHEe2WXM2LDn-oyg" name="Controller">
+      <packagedElement xmi:type="uml:Class" xmi:id="_tlmA8GAHEe2WXM2LDn-oyg" name="Controller">
+        <ownedAttribute xmi:id="_tr-VwGAHEe2WXM2LDn-oyg" name="api" visibility="private" type="_tmYEEGAHEe2WXM2LDn-oyg" association="_ttbuUGAHEe2WXM2LDn-oyg"/>
+        <ownedAttribute xmi:id="_tr-80WAHEe2WXM2LDn-oyg" name="ctrl" isStatic="true" type="_tlmA8GAHEe2WXM2LDn-oyg" association="_ttc8cGAHEe2WXM2LDn-oyg">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_tr_j4GAHEe2WXM2LDn-oyg" value="null"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tr_j4WAHEe2WXM2LDn-oyg" name="isManager" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsaaoGAHEe2WXM2LDn-oyg" name="getController" specification="_tln2IGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsaaoWAHEe2WXM2LDn-oyg" type="_tlmA8GAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (ctrl == null) &#xD;
+ 		ctrl = new Controller();&#xD;
+ 	return ctrl;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsbBsGAHEe2WXM2LDn-oyg" name="Controller" specification="_tlprUGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsbBsWAHEe2WXM2LDn-oyg" type="_tlmA8GAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>api = ModelFacade.getAPI();&#xD;
+ 	api.establishConnection();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsbBsmAHEe2WXM2LDn-oyg" name="getAPI" specification="_tlq5cGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsbBs2AHEe2WXM2LDn-oyg" type="_tmYEEGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsbBtGAHEe2WXM2LDn-oyg" name="close" specification="_tlrggGAHEe2WXM2LDn-oyg">
+          <language>java</language>
+          <body>api.closeConnection(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsbowGAHEe2WXM2LDn-oyg" name="checkLogin" specification="_tlrggWAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsbowWAHEe2WXM2LDn-oyg" name="user">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsbowmAHEe2WXM2LDn-oyg" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsbow2AHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (api.checkCredentials(user, password)) {&#xD;
+ 		new MenuFrame(isManager);&#xD;
+ 		return true;&#xD;
+ 	}&#xD;
+ 	return false;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsboxGAHEe2WXM2LDn-oyg" name="setManager" specification="_tlt8wGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsboxWAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.isManager = isManager; </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsboxmAHEe2WXM2LDn-oyg" name="getCategories" specification="_tluj0WAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsbox2AHEe2WXM2LDn-oyg" type="_trdYYWAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.getCategories(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsboyGAHEe2WXM2LDn-oyg" name="setCategory" specification="_tlwZAGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsboyWAHEe2WXM2LDn-oyg" name="cat">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsboymAHEe2WXM2LDn-oyg" name="maxLoan">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsboy2AHEe2WXM2LDn-oyg" name="maxDuration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tsbozGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.setCategory(cat, maxLoan, maxDuration); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tscP0GAHEe2WXM2LDn-oyg" name="getNbLoans" specification="_tlxnIGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tscP0WAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.getNbLoans(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tscP0mAHEe2WXM2LDn-oyg" name="getCategoryData" specification="_tlxnImAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tscP02AHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tscP1GAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.getCategoryData(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tscP1WAHEe2WXM2LDn-oyg" name="consultBorrows" specification="_tly1QGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tscP1mAHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tscP12AHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.consultBorrows(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsc24GAHEe2WXM2LDn-oyg" name="manageUsers" specification="_tlzcUGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsc24WAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsc24mAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.manageUsers(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsc242AHEe2WXM2LDn-oyg" name="filterUsers" specification="_tl0DYGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsc25GAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsc25WAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.filterUsers(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsc25mAHEe2WXM2LDn-oyg" name="updateUser" specification="_trChoGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsc252AHEe2WXM2LDn-oyg" name="u" type="_tm62oGAHEe2WXM2LDn-oyg"/>
+          <ownedParameter xmi:id="_tsc26GAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return ModelFacade.getAPI().setRedList(u); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsc26WAHEe2WXM2LDn-oyg" name="borrowBooks" specification="_tl0qcGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsc26mAHEe2WXM2LDn-oyg" type="_trvFMWAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsc262AHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.borrowBooks(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsdd8GAHEe2WXM2LDn-oyg" name="borrowBook" specification="_trDIsGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsdd8WAHEe2WXM2LDn-oyg" name="b" type="_tl7_MGAHEe2WXM2LDn-oyg"/>
+          <language>java</language>
+          <body>ModelFacade.getAPI().borrowBook(b); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsdd8mAHEe2WXM2LDn-oyg" name="returnBooksList" specification="_tl14kGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsdd82AHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsdd9GAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return api.returnBooksList(); </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tsdd9WAHEe2WXM2LDn-oyg" name="returnBook" specification="_trDvwGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tsdd9mAHEe2WXM2LDn-oyg" name="b" type="_tmHlYGAHEe2WXM2LDn-oyg"/>
+          <language>java</language>
+          <body>ModelFacade.getAPI().returnBook(b); </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_tln2IGAHEe2WXM2LDn-oyg" name="getController" isStatic="true" method="_tsaaoGAHEe2WXM2LDn-oyg">
+          <ownedComment xmi:id="_7VMLMGAMEe2WXM2LDn-oyg">
+            <body>Singleton pattern implementation&#xD;
+	 * @return unique instance of Controller type</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_trBTgGAHEe2WXM2LDn-oyg" type="_tlmA8GAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tlprUGAHEe2WXM2LDn-oyg" name="Controller" visibility="private" method="_tsbBsGAHEe2WXM2LDn-oyg">
+          <eAnnotations xmi:id="_tlqSYGAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_tlqSYWAHEe2WXM2LDn-oyg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_tlqSYmAHEe2WXM2LDn-oyg" type="_tlmA8GAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tlq5cGAHEe2WXM2LDn-oyg" name="getAPI" method="_tsbBsmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_trB6kGAHEe2WXM2LDn-oyg" type="_tmYEEGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tlrggGAHEe2WXM2LDn-oyg" name="close" method="_tsbBtGAHEe2WXM2LDn-oyg"/>
+        <ownedOperation xmi:id="_tlrggWAHEe2WXM2LDn-oyg" name="checkLogin" method="_tsbowGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tlrggmAHEe2WXM2LDn-oyg" name="user">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tlsHkGAHEe2WXM2LDn-oyg" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tlsHkWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tlt8wGAHEe2WXM2LDn-oyg" name="setManager" method="_tsboxGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tluj0GAHEe2WXM2LDn-oyg" name="isManager">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tluj0WAHEe2WXM2LDn-oyg" name="getCategories" method="_tsboxmAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_trueIGAHEe2WXM2LDn-oyg" type="_trdYYWAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tlwZAGAHEe2WXM2LDn-oyg" name="setCategory" method="_tsboyGAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tlxAEGAHEe2WXM2LDn-oyg" name="cat">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tlxAEWAHEe2WXM2LDn-oyg" name="maxLoan">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tlxAEmAHEe2WXM2LDn-oyg" name="maxDuration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_tlxAE2AHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tlxnIGAHEe2WXM2LDn-oyg" name="getNbLoans" method="_tscP0GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tlxnIWAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tlxnImAHEe2WXM2LDn-oyg" name="getCategoryData" method="_tscP0mAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tlyOMGAHEe2WXM2LDn-oyg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tlyOMWAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tly1QGAHEe2WXM2LDn-oyg" name="consultBorrows" method="_tscP1WAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tly1QWAHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tly1QmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tlzcUGAHEe2WXM2LDn-oyg" name="manageUsers" method="_tsc24GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tlzcUWAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tlzcUmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tl0DYGAHEe2WXM2LDn-oyg" name="filterUsers" method="_tsc242AHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tl0DYWAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tl0DYmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tl0qcGAHEe2WXM2LDn-oyg" name="borrowBooks" method="_tsc26WAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tl0qcWAHEe2WXM2LDn-oyg" type="_trvFMWAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tl1RgGAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_tl14kGAHEe2WXM2LDn-oyg" name="returnBooksList" method="_tsdd8mAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_tl14kWAHEe2WXM2LDn-oyg" type="_tmHlYGAHEe2WXM2LDn-oyg" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tl14kmAHEe2WXM2LDn-oyg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_trChoGAHEe2WXM2LDn-oyg" name="updateUser" method="_tsc25mAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_trChoWAHEe2WXM2LDn-oyg" name="u" type="_tm62oGAHEe2WXM2LDn-oyg"/>
+          <ownedParameter xmi:id="_trChomAHEe2WXM2LDn-oyg" type="_tm62oGAHEe2WXM2LDn-oyg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_trDIsGAHEe2WXM2LDn-oyg" name="borrowBook" method="_tsdd8GAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_trDIsWAHEe2WXM2LDn-oyg" name="b" type="_tl7_MGAHEe2WXM2LDn-oyg"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_trDvwGAHEe2WXM2LDn-oyg" name="returnBook" method="_tsdd9WAHEe2WXM2LDn-oyg">
+          <ownedParameter xmi:id="_trDvwWAHEe2WXM2LDn-oyg" name="b" type="_tmHlYGAHEe2WXM2LDn-oyg"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttbuUGAHEe2WXM2LDn-oyg" name="" memberEnd="_ttbuUWAHEe2WXM2LDn-oyg _tr-VwGAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttbuUWAHEe2WXM2LDn-oyg" name="" type="_tlmA8GAHEe2WXM2LDn-oyg" association="_ttbuUGAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttc8cGAHEe2WXM2LDn-oyg" name="" memberEnd="_ttc8cWAHEe2WXM2LDn-oyg _tr-80WAHEe2WXM2LDn-oyg">
+        <ownedEnd xmi:id="_ttc8cWAHEe2WXM2LDn-oyg" name="" type="_tlmA8GAHEe2WXM2LDn-oyg" association="_ttc8cGAHEe2WXM2LDn-oyg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tkNg4GAHEe2WXM2LDn-oyg" name="javafx">
+      <packagedElement xmi:type="uml:Package" xmi:id="_tkOH8GAHEe2WXM2LDn-oyg" name="collections">
+        <packagedElement xmi:type="uml:Package" xmi:id="_tkOH8WAHEe2WXM2LDn-oyg" name="transformation"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tkOH8mAHEe2WXM2LDn-oyg" name="event">
+        <packagedElement xmi:type="uml:Class" xmi:id="_tri38GAHEe2WXM2LDn-oyg" name="ActionEvent"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_trkGEGAHEe2WXM2LDn-oyg" name="EventHandler"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tkOvAGAHEe2WXM2LDn-oyg" name="geometry">
+        <packagedElement xmi:type="uml:Class" xmi:id="_trNgwWAHEe2WXM2LDn-oyg" name="Insets"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tkOvAWAHEe2WXM2LDn-oyg" name="scene">
+        <packagedElement xmi:type="uml:Package" xmi:id="_tkOvAmAHEe2WXM2LDn-oyg" name="control">
+          <packagedElement xmi:type="uml:Package" xmi:id="_tkOvA2AHEe2WXM2LDn-oyg" name="Alert">
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_trPV8WAHEe2WXM2LDn-oyg" name="AlertType"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_tkPWEGAHEe2WXM2LDn-oyg" name="cell">
+            <packagedElement xmi:type="uml:Class" xmi:id="_trQkEGAHEe2WXM2LDn-oyg" name="PropertyValueFactory"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_trYf4GAHEe2WXM2LDn-oyg" name="Button"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tr0kwGAHEe2WXM2LDn-oyg" name="TableView"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_tkPWEWAHEe2WXM2LDn-oyg" name="image">
+          <packagedElement xmi:type="uml:Class" xmi:id="_trWqsWAHEe2WXM2LDn-oyg" name="Image"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_trbjMWAHEe2WXM2LDn-oyg" name="ImageView"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_tkPWEmAHEe2WXM2LDn-oyg" name="layout">
+          <packagedElement xmi:type="uml:Class" xmi:id="_trcKQWAHEe2WXM2LDn-oyg" name="GridPane"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_trf0oGAHEe2WXM2LDn-oyg" name="BorderPane"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_tkPWE2AHEe2WXM2LDn-oyg" name="paint">
+          <packagedElement xmi:type="uml:Class" xmi:id="_trRLIWAHEe2WXM2LDn-oyg" name="Color"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_tkP9IGAHEe2WXM2LDn-oyg" name="text">
+          <packagedElement xmi:type="uml:Class" xmi:id="_trgbsWAHEe2WXM2LDn-oyg" name="Text"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_trOu4GAHEe2WXM2LDn-oyg" name="Scene"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tkP9IWAHEe2WXM2LDn-oyg" name="stage">
+        <packagedElement xmi:type="uml:Class" xmi:id="_trSZQGAHEe2WXM2LDn-oyg" name="Stage"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tkP9ImAHEe2WXM2LDn-oyg" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_trTAUGAHEe2WXM2LDn-oyg" name="Callback"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_trcxUWAHEe2WXM2LDn-oyg" name="Duration"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tkZuIGAHEe2WXM2LDn-oyg" name="application">
+        <packagedElement xmi:type="uml:Class" xmi:id="_trWDoGAHEe2WXM2LDn-oyg" name="Application"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tki4EGAHEe2WXM2LDn-oyg" name="animation">
+        <packagedElement xmi:type="uml:Class" xmi:id="_tra8IGAHEe2WXM2LDn-oyg" name="PauseTransition"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_tNdNwGAHEe2WXM2LDn-oyg">
+      <eAnnotations xmi:id="_tNdNwWAHEe2WXM2LDn-oyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_tNd00GAHEe2WXM2LDn-oyg" base_Package="_tFs_8GAHEe2WXM2LDn-oyg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Generics xmi:id="_tlvx8GAHEe2WXM2LDn-oyg" genericsValue="String" base_Element="_tluj0WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Array xmi:id="_tlyOMmAHEe2WXM2LDn-oyg" base_Element="_tlxnImAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Generics xmi:id="_tmvQcGAHEe2WXM2LDn-oyg" genericsValue="String" base_Element="_tmbHYmAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Array xmi:id="_tmxFo2AHEe2WXM2LDn-oyg" base_Element="_tmxFoGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tnEnomAHEe2WXM2LDn-oyg" base_Element="_tnEAkGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tnFOsWAHEe2WXM2LDn-oyg" base_Element="_tnEAkGAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tnF1wGAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tnF1wWAHEe2WXM2LDn-oyg" skipName="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_V-cMoWALEe2WXM2LDn-oyg" value="&quot;unchecked&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_V-cMomALEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tnHD4WAHEe2WXM2LDn-oyg" base_Element="_tnHD4GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tnHq8GAHEe2WXM2LDn-oyg" base_Element="_tnHD4GAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tnHq8WAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tnHq8mAHEe2WXM2LDn-oyg" skipName="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_V-cMo2ALEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_V-cMpGALEe2WXM2LDn-oyg" value="&quot;unchecked&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tnL8ZGAHEe2WXM2LDn-oyg" base_Element="_tnL8YGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tnMjcWAHEe2WXM2LDn-oyg" base_Element="_tnL8YGAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tnNKgGAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tnNKgWAHEe2WXM2LDn-oyg" skipName="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_r-rwsGALEe2WXM2LDn-oyg" value="&quot;unchecked&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_r-rwsWALEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_tnRb8WAHEe2WXM2LDn-oyg" base_Element="_tnQ04WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tne3UGAHEe2WXM2LDn-oyg" base_Element="_tneQQGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tnfeYGAHEe2WXM2LDn-oyg" base_Element="_tneQQGAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tnfeYWAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tnfeYmAHEe2WXM2LDn-oyg" skipName="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_YUuSEWAMEe2WXM2LDn-oyg" value="&quot;unchecked&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_YUuSEmAMEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tngFcGAHEe2WXM2LDn-oyg" base_Element="_tnfeY2AHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tngFcWAHEe2WXM2LDn-oyg" base_Element="_tnfeY2AHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tngsgGAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tngsgWAHEe2WXM2LDn-oyg" skipName="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_YUuSE2AMEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_YUuSFGAMEe2WXM2LDn-oyg" value="&quot;unchecked&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tnmzIGAHEe2WXM2LDn-oyg" base_Element="_tnmMEGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tnnaMGAHEe2WXM2LDn-oyg" base_Element="_tnmMEGAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tnnaMWAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tnnaMmAHEe2WXM2LDn-oyg" skipName="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iAo9wWAMEe2WXM2LDn-oyg" value="&quot;unchecked&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iAo9wmAMEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tnooUWAHEe2WXM2LDn-oyg" base_Element="_tnooUGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tnpPYGAHEe2WXM2LDn-oyg" base_Element="_tnooUGAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tnpPYWAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tnpPYmAHEe2WXM2LDn-oyg" skipName="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iAo9w2AMEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iAo9xGAMEe2WXM2LDn-oyg" value="&quot;unchecked&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_trIBMGAHEe2WXM2LDn-oyg" base_Element="_trHaIGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trIoQGAHEe2WXM2LDn-oyg" base_Element="_trIBMWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trNgwGAHEe2WXM2LDn-oyg" base_Element="_trM5sGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trOH0GAHEe2WXM2LDn-oyg" base_Element="_trNgwWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trPV8GAHEe2WXM2LDn-oyg" base_Element="_trOu4GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trP9AGAHEe2WXM2LDn-oyg" base_Element="_trPV8WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trRLIGAHEe2WXM2LDn-oyg" base_Element="_trQkEGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trRyMGAHEe2WXM2LDn-oyg" base_Element="_trRLIWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trSZQWAHEe2WXM2LDn-oyg" base_Element="_trSZQGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trTAUWAHEe2WXM2LDn-oyg" base_Element="_trTAUGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trWqsGAHEe2WXM2LDn-oyg" base_Element="_trWDoGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trXRwGAHEe2WXM2LDn-oyg" base_Element="_trWqsWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trZG8GAHEe2WXM2LDn-oyg" base_Element="_trYf4GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trbjMGAHEe2WXM2LDn-oyg" base_Element="_tra8IGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trcKQGAHEe2WXM2LDn-oyg" base_Element="_trbjMWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trcxUGAHEe2WXM2LDn-oyg" base_Element="_trcKQWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trdYYGAHEe2WXM2LDn-oyg" base_Element="_trcxUWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trd_cGAHEe2WXM2LDn-oyg" base_Element="_trdYYWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trgbsGAHEe2WXM2LDn-oyg" base_Element="_trf0oGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trhCwGAHEe2WXM2LDn-oyg" base_Element="_trgbsWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trjfAGAHEe2WXM2LDn-oyg" base_Element="_tri38GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trlUMGAHEe2WXM2LDn-oyg" base_Element="_trkGEGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_trvFMmAHEe2WXM2LDn-oyg" base_Element="_trvFMWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_tryIgGAHEe2WXM2LDn-oyg" base_Element="_trxhcGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_tr1L0GAHEe2WXM2LDn-oyg" base_Element="_tr0kwGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tr-80GAHEe2WXM2LDn-oyg" base_Element="_tr-VwGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tr-80mAHEe2WXM2LDn-oyg" base_Element="_tr-80WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsAK8GAHEe2WXM2LDn-oyg" base_Element="_tr_j4WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsBZEGAHEe2WXM2LDn-oyg" base_Element="_tsAyAGAHEe2WXM2LDn-oyg">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_tsCAIGAHEe2WXM2LDn-oyg" name="getTitle" method="_tseFAGAHEe2WXM2LDn-oyg">
+      <ownedParameter xmi:id="_tsCnMGAHEe2WXM2LDn-oyg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:MultiDeclaration xmi:id="_tsBZEWAHEe2WXM2LDn-oyg" base_Property="_tsAyAGAHEe2WXM2LDn-oyg" siblings="_ts5i0GAHEe2WXM2LDn-oyg _ts6J4WAHEe2WXM2LDn-oyg _ts6w8WAHEe2WXM2LDn-oyg _ts7YAWAHEe2WXM2LDn-oyg" root="true"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_tsDOQGAHEe2WXM2LDn-oyg" base_Property="_tsCnMWAHEe2WXM2LDn-oyg" siblings="_ts7_EWAHEe2WXM2LDn-oyg _ts9NMGAHEe2WXM2LDn-oyg _ts90QGAHEe2WXM2LDn-oyg" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsDOQWAHEe2WXM2LDn-oyg" base_Element="_tsCnMWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_tsFDcWAHEe2WXM2LDn-oyg" base_Property="_tsFDcGAHEe2WXM2LDn-oyg" siblings="_ts_CYGAHEe2WXM2LDn-oyg _ts_pcGAHEe2WXM2LDn-oyg _ts_pc2AHEe2WXM2LDn-oyg _ttA3kGAHEe2WXM2LDn-oyg _ttBeoGAHEe2WXM2LDn-oyg" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsFqgGAHEe2WXM2LDn-oyg" base_Element="_tsFDcGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_tsGRkWAHEe2WXM2LDn-oyg" base_Property="_tsGRkGAHEe2WXM2LDn-oyg" siblings="_ttBeo2AHEe2WXM2LDn-oyg _ttCFsmAHEe2WXM2LDn-oyg _ttFJAGAHEe2WXM2LDn-oyg _ttFJA2AHEe2WXM2LDn-oyg" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsG4oGAHEe2WXM2LDn-oyg" base_Element="_tsGRkGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsIt0WAHEe2WXM2LDn-oyg" base_Element="_tsIt0GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsJU4WAHEe2WXM2LDn-oyg" base_Element="_tsJU4GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsLKEGAHEe2WXM2LDn-oyg" base_Element="_tsKjAGAHEe2WXM2LDn-oyg">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_tsLxIGAHEe2WXM2LDn-oyg" name="getFirstName" method="_tstVkGAHEe2WXM2LDn-oyg">
+      <ownedParameter xmi:id="_tsMYMGAHEe2WXM2LDn-oyg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:MultiDeclaration xmi:id="_tsLKEWAHEe2WXM2LDn-oyg" base_Property="_tsKjAGAHEe2WXM2LDn-oyg" siblings="_ttIMUGAHEe2WXM2LDn-oyg _ttJacmAHEe2WXM2LDn-oyg _ttKBgWAHEe2WXM2LDn-oyg" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsM_QWAHEe2WXM2LDn-oyg" base_Element="_tsM_QGAHEe2WXM2LDn-oyg">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_tsNmUGAHEe2WXM2LDn-oyg" name="getRedList" method="_tst8oWAHEe2WXM2LDn-oyg">
+      <ownedParameter xmi:id="_tsNmUmAHEe2WXM2LDn-oyg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_tsNmUWAHEe2WXM2LDn-oyg" name="setRedList" method="_tsujsGAHEe2WXM2LDn-oyg"/>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsPbgGAHEe2WXM2LDn-oyg" base_Element="_tsO0cGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsQCkGAHEe2WXM2LDn-oyg" base_Element="_tsPbgWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsQCkmAHEe2WXM2LDn-oyg" base_Element="_tsQCkWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsQpoWAHEe2WXM2LDn-oyg" base_Element="_tsQpoGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tsRQsGAHEe2WXM2LDn-oyg" base_Element="_tsQpoGAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tsRQsWAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tsRQsmAHEe2WXM2LDn-oyg" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_V-cMoGALEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsSe0GAHEe2WXM2LDn-oyg" base_Element="_tsR3wGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsTF4GAHEe2WXM2LDn-oyg" base_Element="_tsSe0WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsTs8WAHEe2WXM2LDn-oyg" base_Element="_tsTs8GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsU7EGAHEe2WXM2LDn-oyg" base_Element="_tsUUAGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsViIGAHEe2WXM2LDn-oyg" base_Element="_tsU7EWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tsViIWAHEe2WXM2LDn-oyg" base_Element="_tsU7EWAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tsViImAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tsViI2AHEe2WXM2LDn-oyg" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_YUuSEGAMEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsWJMWAHEe2WXM2LDn-oyg" base_Element="_tsWJMGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsXXUGAHEe2WXM2LDn-oyg" base_Element="_tsWwQGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tsXXUmAHEe2WXM2LDn-oyg" base_Element="_tsXXUWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Annotations xmi:id="_tsX-YGAHEe2WXM2LDn-oyg" base_Element="_tsXXUWAHEe2WXM2LDn-oyg">
+    <annotations xmi:id="_tsX-YWAHEe2WXM2LDn-oyg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_tsX-YmAHEe2WXM2LDn-oyg" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_iAo9wGAMEe2WXM2LDn-oyg" value="&quot;rawtypes&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <uml:OpaqueBehavior xmi:id="_tseFAGAHEe2WXM2LDn-oyg" name="getTitle" specification="_tsCAIGAHEe2WXM2LDn-oyg">
+    <ownedParameter xmi:id="_tseFAWAHEe2WXM2LDn-oyg" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.title; </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_tstVkGAHEe2WXM2LDn-oyg" name="getFirstName" specification="_tsLxIGAHEe2WXM2LDn-oyg">
+    <ownedParameter xmi:id="_tst8oGAHEe2WXM2LDn-oyg" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.firstName; </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_tst8oWAHEe2WXM2LDn-oyg" name="getRedList" specification="_tsNmUGAHEe2WXM2LDn-oyg">
+    <ownedParameter xmi:id="_tst8omAHEe2WXM2LDn-oyg" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.redList; </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_tsujsGAHEe2WXM2LDn-oyg" name="setRedList" specification="_tsNmUWAHEe2WXM2LDn-oyg">
+    <language>java</language>
+    <body>this.redList = !this.redList; </body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts5i0WAHEe2WXM2LDn-oyg" base_Property="_ts5i0GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts6J4GAHEe2WXM2LDn-oyg" base_Element="_ts5i0GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts6J4mAHEe2WXM2LDn-oyg" base_Property="_ts6J4WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts6w8GAHEe2WXM2LDn-oyg" base_Element="_ts6J4WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts6w8mAHEe2WXM2LDn-oyg" base_Property="_ts6w8WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts7YAGAHEe2WXM2LDn-oyg" base_Element="_ts6w8WAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts7YAmAHEe2WXM2LDn-oyg" base_Property="_ts7YAWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts7_EGAHEe2WXM2LDn-oyg" base_Element="_ts7YAWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts8mIGAHEe2WXM2LDn-oyg" base_Property="_ts7_EWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts8mIWAHEe2WXM2LDn-oyg" base_Element="_ts7_EWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts9NMWAHEe2WXM2LDn-oyg" base_Property="_ts9NMGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts9NMmAHEe2WXM2LDn-oyg" base_Element="_ts9NMGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts90QWAHEe2WXM2LDn-oyg" base_Property="_ts90QGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts-bUGAHEe2WXM2LDn-oyg" base_Element="_ts90QGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts_CYWAHEe2WXM2LDn-oyg" base_Property="_ts_CYGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts_CYmAHEe2WXM2LDn-oyg" base_Element="_ts_CYGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ts_pcWAHEe2WXM2LDn-oyg" base_Property="_ts_pcGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ts_pcmAHEe2WXM2LDn-oyg" base_Element="_ts_pcGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttAQgGAHEe2WXM2LDn-oyg" base_Property="_ts_pc2AHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttAQgWAHEe2WXM2LDn-oyg" base_Element="_ts_pc2AHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttA3kWAHEe2WXM2LDn-oyg" base_Property="_ttA3kGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttA3kmAHEe2WXM2LDn-oyg" base_Element="_ttA3kGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttBeoWAHEe2WXM2LDn-oyg" base_Property="_ttBeoGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttBeomAHEe2WXM2LDn-oyg" base_Element="_ttBeoGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttCFsGAHEe2WXM2LDn-oyg" base_Property="_ttBeo2AHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttCFsWAHEe2WXM2LDn-oyg" base_Element="_ttBeo2AHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttEh8GAHEe2WXM2LDn-oyg" base_Property="_ttCFsmAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttEh8WAHEe2WXM2LDn-oyg" base_Element="_ttCFsmAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttFJAWAHEe2WXM2LDn-oyg" base_Property="_ttFJAGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttFJAmAHEe2WXM2LDn-oyg" base_Element="_ttFJAGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttFwEGAHEe2WXM2LDn-oyg" base_Property="_ttFJA2AHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttFwEWAHEe2WXM2LDn-oyg" base_Element="_ttFJA2AHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttJacGAHEe2WXM2LDn-oyg" base_Property="_ttIMUGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttJacWAHEe2WXM2LDn-oyg" base_Element="_ttIMUGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttJac2AHEe2WXM2LDn-oyg" base_Property="_ttJacmAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttKBgGAHEe2WXM2LDn-oyg" base_Element="_ttJacmAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_ttKokGAHEe2WXM2LDn-oyg" base_Property="_ttKBgWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ttLPoGAHEe2WXM2LDn-oyg" base_Element="_ttKBgWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttcVYGAHEe2WXM2LDn-oyg" base_Element="_ttbuUGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttc8cmAHEe2WXM2LDn-oyg" base_Element="_ttc8cGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_tteKkGAHEe2WXM2LDn-oyg" base_Element="_ttdjgGAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttexoGAHEe2WXM2LDn-oyg" base_Element="_tteKkWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttfYsGAHEe2WXM2LDn-oyg" base_Element="_ttexoWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttf_wGAHEe2WXM2LDn-oyg" base_Element="_ttfYsWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttgm0mAHEe2WXM2LDn-oyg" base_Element="_ttgm0GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_tthN4mAHEe2WXM2LDn-oyg" base_Element="_tthN4GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_tticAGAHEe2WXM2LDn-oyg" base_Element="_tth08GAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttjDEGAHEe2WXM2LDn-oyg" base_Element="_tticAWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttjqIGAHEe2WXM2LDn-oyg" base_Element="_ttjDEWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttkRMGAHEe2WXM2LDn-oyg" base_Element="_ttjqIWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttk4QGAHEe2WXM2LDn-oyg" base_Element="_ttkRMWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttlfUGAHEe2WXM2LDn-oyg" base_Element="_ttk4QWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttmGYGAHEe2WXM2LDn-oyg" base_Element="_ttlfUWAHEe2WXM2LDn-oyg"/>
+  <UMLLabProfile:Reference xmi:id="_ttnUgGAHEe2WXM2LDn-oyg" base_Element="_ttmGYWAHEe2WXM2LDn-oyg"/>
+</xmi:XMI>
